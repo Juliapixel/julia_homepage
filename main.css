@@ -1,0 +1,55 @@
+:root {
+    font-family: monospace;
+    font-size: 16px;
+    color: rgb(202, 202, 202);
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+a {
+    color: white;
+}
+
+img#uuh:hover {
+    animation: uuh 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes uuh {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+div.toogay {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+div.pride {
+    font-size: 32px;
+    width: fit-content;
+    animation: spin 300ms linear 0s infinite
+}
+
+img#scream {
+    align-self: center;
+}
+
+img#scream:hover {
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
