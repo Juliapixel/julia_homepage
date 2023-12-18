@@ -1,4 +1,3 @@
-
 let screamer = document.getElementById("scream")
 
 screamer.addEventListener("click", (ev) => {
