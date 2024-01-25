@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: vecterminus14;
+    font-size: 14px;
+    src: url("/VecTerminus14Medium.otf");
+}
+
+@layer base {
+    body {
+        @apply transition-colors;
+        @apply font-vecTerminus text-[14px];
+        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#eee_0_0_15px];
+        @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px];
+    }
+
+    h1 {
+        @apply text-[28px] mt-2 mb-2
+    }
+
+    a {
+        @apply underline;
+        @apply dark:text-white;
+        @apply text-blue-400;
+    }
+}
