@@ -14,7 +14,7 @@
 <slot />
 <Footer>
     <svelte:fragment slot="links">
-        <a href="https://github.com/juliapixel.com">
+        <a href="https://github.com/juliapixel">
             <!-- TODO: make it light mode -->
             <img src="/github-mark.svg" alt="Github" class="h-8"/>
         </a>
