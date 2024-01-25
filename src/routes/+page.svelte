@@ -2,7 +2,7 @@
     import BloomImage from "$lib/BloomImage.svelte";
 </script>
 
-<div class="ml-[20%] mr-[20%] p-8 mt-12 shadow-lg dark:bg-zinc-800 bg-zinc-100">
+<div class="ml-[20%] mr-[20%] max-md:ml-0 max-md:mr-0 p-8 mt-12 shadow-lg dark:bg-zinc-800 bg-zinc-100">
     <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
     <h1>yo</h1>
     <p>
