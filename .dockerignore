@@ -1,0 +1,7 @@
+Dockerfile
+.dockerignore
+README.md
+build/
+.svelte-kit/
+node_modules/
+.git/
