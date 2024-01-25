@@ -26,7 +26,19 @@
     <svelte:fragment slot="info">
         <p>{"</>"} with {"<3"} by Julia</p>
         <div class="flex mt-20">
-            <p>be gay &ThickSpace;</p><div class="text-lg [animation:spin_250ms_linear_infinite]">🏳️‍⚧️</div>
+            <p>be gay &ThickSpace;</p><div class="text-lg spinnu">🏳️‍⚧️</div>
         </div>
     </svelte:fragment>
 </Footer>
+
+<style>
+    .spinnu {
+        animation: spinnu 250ms linear infinite;
+    }
+
+    @keyframes spinnu {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
