@@ -15,8 +15,19 @@
         @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
     }
 
+    button {
+        @apply p-2 rounded-lg shadow-lg;
+        @apply dark:bg-zinc-800 bg-zinc-200;
+        @apply border dark:border-zinc-700 border-zinc-300;
+    }
+
     h1 {
         @apply text-[28px] mt-2 mb-2
+    }
+
+    hr {
+        @apply border mt-5 mb-5;
+        @apply dark:border-zinc-600 border-zinc-300
     }
 
     a {

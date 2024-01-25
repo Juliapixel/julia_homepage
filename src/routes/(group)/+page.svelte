@@ -1,6 +1,5 @@
 <script lang="ts">
     import BloomImage from "$lib/BloomImage.svelte";
-    import Tooltip from "$lib/Tooltip.svelte";
     import tippy, { type Props } from "tippy.js";
     import "tippy.js/animations/perspective-subtle.css"
 
