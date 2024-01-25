@@ -14,5 +14,7 @@
     });
 </script>
 
-<img {src} {alt} bind:this={bloom_image} class="{clazz} absolute mix-blend-screen blur-[10px] opacity-50"/>
-<img {src} {alt} bind:this={main_image} class={clazz}/>
+<div>
+    <img {src} {alt} bind:this={bloom_image} class="{clazz} fixed mix-blend-screen blur-[10px] z-[1] opacity-50"/>
+    <img {src} {alt} bind:this={main_image} class="{clazz} relative"/>
+</div>
