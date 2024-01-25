@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let onToggle: (enabled: boolean) => any;
+    export let onToggle: (enabled: boolean) => void;
     export let value: boolean;
 
     function handleKey(e: KeyboardEvent) {
