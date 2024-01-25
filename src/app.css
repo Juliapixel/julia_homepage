@@ -11,8 +11,8 @@
     body {
         @apply transition-colors;
         @apply font-vecTerminus text-[14px];
-        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#eee_0_0_15px];
-        @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px];
+        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#eee_0_0_15px] dark:selection:bg-violet-500;
+        @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
     }
 
     h1 {
@@ -24,4 +24,9 @@
         @apply dark:text-white;
         @apply text-blue-400;
     }
+}
+
+.tippy-box {
+    @apply p-2 border rounded-lg shadow-lg;
+    @apply dark:border-zinc-700 border-zinc-300
 }
