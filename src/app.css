@@ -8,9 +8,13 @@
 }
 
 @layer base {
+    html {
+        @apply font-mono;
+    }
+
     body {
         @apply transition-colors;
-        @apply font-vecTerminus text-[14px];
+        @apply text-[14px];
         @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#eee_0_0_15px] dark:selection:bg-violet-500;
         @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
     }
