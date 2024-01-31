@@ -36,7 +36,7 @@
     }
 
     a {
-        @apply underline;
+        @apply underline underline-offset-2;
         @apply dark:text-white;
         @apply text-blue-400;
     }
