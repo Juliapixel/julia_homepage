@@ -15,23 +15,21 @@
     }
 </script>
 
-<div class="ml-[20%] mr-[20%] max-md:ml-0 max-md:mr-0 p-8 mt-12 shadow-lg dark:bg-zinc-800 bg-zinc-100">
-    <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
-    <h1>{$_("yo")}</h1>
-    <p>
-        {$_("intro_main")}
-        <span use:tooltip={{content:"help", animation: "perspective-subtle"}}>{$_("brazil")}</span>
-    </p>
-    <p>{$_("reach_on_discord")}</p>
-    <p>
-        {$_("or_by")}
-        <a href="mailto://homepage@juliapixel.com">email</a>
-        {$_("that_sorta_stuff")}
-    </p>
-    <p>
-        {$_("check_out_my")}
-        <a href="https://github.com/juliapixel/">github</a>
-        {$_("woah")}
-    </p>
-    <p class="mt-32">{$_("adding_more_stuff")}</p>
-</div>
+<BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
+<h1>{$_("yo")}</h1>
+<p>
+    {$_("intro_main")}
+    <span use:tooltip={{content:"help", animation: "perspective-subtle"}}>{$_("brazil")}</span>
+</p>
+<p>{$_("reach_on_discord")}</p>
+<p>
+    {$_("or_by")}
+    <a href="mailto://homepage@juliapixel.com">email</a>
+    {$_("that_sorta_stuff")}
+</p>
+<p>
+    {$_("check_out_my")}
+    <a href="https://github.com/juliapixel/">github</a>
+    {$_("woah")}
+</p>
+<p class="mt-32">{$_("adding_more_stuff")}</p>

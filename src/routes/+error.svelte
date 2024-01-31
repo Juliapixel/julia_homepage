@@ -2,17 +2,20 @@
     import { page } from "$app/stores";
     import BloomImage from "$lib/BloomImage.svelte";
     import DarkToggle from "$lib/DarkToggle.svelte"
+    import ErrorText from "$lib/ErrorText.svelte"
+    import { onMount } from "svelte";
 
-    const messages = [
-        "erm this is awkward...",
-        "there's nothing here...",
-        "erm...",
-        "orm...",
-    ];
-
-    const message = messages[Math.floor((Math.random() * messages.length))];
+    let msg_box: Element;
 
     $page.status
+
+    onMount(() => {
+        const message = new ErrorText({
+            intro: false,
+            target: msg_box,
+            hydrate: false,
+        })
+    })
 
     function handleClick() {
         history.back()
@@ -23,7 +26,7 @@
 
 <div class="flex flex-col justify-center items-center text-center min-h-[100vh]">
     <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
-    <h1>{message}</h1>
+    <div bind:this={msg_box} />
     <p>Error {$page.status}</p>
     <button class="mt-24" on:click={handleClick}>go back</button>
 </div>

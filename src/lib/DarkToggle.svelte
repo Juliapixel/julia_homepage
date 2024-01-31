@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import ToggleSwitch from "./ToggleSwitch.svelte";
 
-    let dark_enabled = false;
+    export let dark_enabled = false;
 
     onMount(() => {
         const doc = document.documentElement;

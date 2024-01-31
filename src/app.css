@@ -15,14 +15,15 @@
     body {
         @apply transition-colors;
         @apply text-[14px];
-        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#eee_0_0_15px] dark:selection:bg-violet-500;
+        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#bbb_0_0_15px] dark:selection:bg-violet-500;
         @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
     }
 
     button {
-        @apply p-2 rounded-lg shadow-lg;
+        @apply p-2 rounded-lg shadow-lg transition-colors;
         @apply dark:bg-zinc-800 bg-zinc-200;
         @apply border dark:border-zinc-700 border-zinc-300;
+        @apply border dark:hover:bg-zinc-700 hover:bg-zinc-300;
     }
 
     h1 {

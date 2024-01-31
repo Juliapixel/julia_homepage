@@ -3,14 +3,31 @@
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
+    import type { LayoutData } from "./$types";
+
+    export let data: LayoutData;
 </script>
 
 <Header>
+    <svelte:fragment slot="left">
+        <a href="/" class="no-underline text-black">
+            <h1>{">_<"}</h1>
+        </a>
+        <VerticalSeparator height_class="h-8" />
+        <a href="/faq" class="text-black">
+            <button>faq</button>
+        </a>
+        <a href="/projects" class="text-black">
+            <button>projects</button>
+        </a>
+    </svelte:fragment>
     <svelte:fragment slot="right">
-        <DarkToggle />
+        <DarkToggle dark_enabled={data.is_dark}/>
     </svelte:fragment>
 </Header>
-<slot />
+<div class="ml-[20%] mr-[20%] max-md:ml-0 max-md:mr-0 p-8 mt-12 shadow-lg dark:bg-zinc-800 bg-zinc-100 rounded-xl">
+    <slot />
+</div>
 <Footer>
     <svelte:fragment slot="links">
         <a href="https://github.com/juliapixel">
