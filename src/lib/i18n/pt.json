@@ -1,11 +1,13 @@
 {
-    "yo": "eai",
-    "intro_main": "meu nome é Júlia (ela/dela), \"desenvolvedora\" de \"software\"",
-    "brazil": "brasileira",
-    "reach_on_discord": "vc pode me chamar no discord (@Juliapixel) se quiser",
-    "check_out_my": "tb da uma olhada no meu",
-    "woah": "uau",
-    "or_by": "ou por",
-    "that_sorta_stuff": "se vc gostar desse tipo de coisa",
-    "adding_more_stuff": "eu vou colocar mais coisas aqui no futuro ok"
+    "home": {
+        "yo": "eai",
+        "intro_main": "meu nome é Júlia (ela/dela), \"desenvolvedora\" de \"software\"",
+        "brazil": "brasileira",
+        "reach_on_discord": "vc pode me chamar no discord (@Juliapixel) se quiser",
+        "check_out_my": "tb da uma olhada no meu",
+        "woah": "uau",
+        "or_by": "ou por",
+        "that_sorta_stuff": "se vc gostar desse tipo de coisa",
+        "adding_more_stuff": "eu vou colocar mais coisas aqui no futuro ok"
+    }
 }
