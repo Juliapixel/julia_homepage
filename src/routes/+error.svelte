@@ -28,7 +28,12 @@
     <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
     <div bind:this={msg_box} />
     <p>Error {$page.status}</p>
-    <button class="mt-24" on:click={handleClick}>go back</button>
+    <div>
+        <button class="mt-24" on:click={handleClick}>go back</button>
+        <a href="/" class="">
+            <button class="mt-24">go home</button>
+        </a>
+    </div>
 </div>
 <div class="absolute bottom-2 right-2">
     <DarkToggle />
