@@ -14,6 +14,7 @@
 
     body {
         @apply transition-colors;
+        @apply min-h-[100vh];
         @apply text-[14px];
         @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#bbb_0_0_15px] dark:selection:bg-violet-500;
         @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
@@ -39,6 +40,10 @@
         @apply underline underline-offset-2;
         @apply dark:text-white;
         @apply text-blue-400;
+    }
+
+    a>* {
+        @apply dark:text-neutral-300 text-black;
     }
 }
 
