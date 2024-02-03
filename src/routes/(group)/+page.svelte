@@ -1,5 +1,6 @@
 <script lang="ts">
     import BloomImage from "$lib/BloomImage.svelte";
+    import JuliasTime from "$lib/JuliasTime.svelte";
     import { _, locale, locales } from "svelte-i18n";
     import tippy, { type Props } from "tippy.js";
     import "tippy.js/animations/perspective-subtle.css"
@@ -32,4 +33,6 @@
     <a href="https://github.com/juliapixel/">github</a>
     {$_("home.woah")}
 </p>
-<p class="mt-32">{$_("home.adding_more_stuff")}</p>
+<div class="mt-8">
+    {$_("home.my_current_time_is")}: <JuliasTime />
+</div>
