@@ -1,6 +1,7 @@
 <script lang="ts">
     import BloomImage from "$lib/BloomImage.svelte";
     import JuliasTime from "$lib/JuliasTime.svelte";
+    import Meta from "$lib/Meta.svelte";
     import { _, locale, locales } from "svelte-i18n";
     import tippy, { type Props } from "tippy.js";
     import "tippy.js/animations/perspective-subtle.css"
@@ -15,6 +16,8 @@
         };
     }
 </script>
+
+<Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png"/>
 
 <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
 <h1>{$_("home.yo")}</h1>
