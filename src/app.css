@@ -7,6 +7,11 @@
     src: url("/VecTerminus14Medium.otf");
 }
 
+@font-face {
+    font-family: Tamzen;
+    src: url("/Tamzen8x16r.ttf");
+}
+
 @layer base {
     html {
         @apply font-mono;
@@ -15,7 +20,7 @@
     body {
         @apply transition-colors;
         @apply min-h-[100vh];
-        @apply text-[14px];
+        @apply text-[16px];
         @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#bbb_0_0_15px] dark:selection:bg-violet-500;
         @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
     }
@@ -28,7 +33,15 @@
     }
 
     h1 {
-        @apply text-[28px] mt-2 mb-2
+        @apply text-[32px] mt-2 mb-2
+    }
+
+    ul {
+        @apply pl-4;
+    }
+
+    li::marker {
+        content: "* "
     }
 
     hr {

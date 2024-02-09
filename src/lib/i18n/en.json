@@ -1,14 +1,37 @@
 {
-    "home": {
-        "yo": "yo",
-        "intro_main": "i'm Julia, (she/her), a 19yo \"software developer\" from",
-        "brazil": "brazil",
-        "reach_on_discord": "u can reach me on discord @Juliapixel if u want to",
-        "check_out_my": "also check out my",
-        "woah": "woah",
-        "or_by": "or by",
-        "that_sorta_stuff": "if ur into that sorta stuff",
-        "my_current_time_is": "my current time is",
-        "adding_more_stuff": "also i'm adding more stuff on here eventually ok"
+  "home": {
+    "yo": "yo",
+    "intro_main": "i'm Julia (she/her), a 19yo \"software developer\" from",
+    "brazil": "brazil",
+    "about_1": {
+      "0": "i've been coding since i was like 14 years old, making Lua scripts for",
+      "1": "turtles on minecraft"
+    },
+    "about_2": {
+      "0": "noawadays i mostly write Rust, making personal projects that can be seen on my Github"
+    },
+    "reach_on_discord": "u can reach me on discord @Juliapixel if u want to",
+    "check_out_my": "also check out my",
+    "woah": "woah",
+    "or_by": "or by",
+    "that_sorta_stuff": "if ur into that sorta stuff",
+    "my_current_time_is": "my current time is",
+    "adding_more_stuff": "also i'm adding more stuff on here eventually ok",
+    "likes": {
+      "0": "i also happen to like",
+      "1": "3D printing",
+      "2": "CAD modeling"
+    },
+    "contact": {
+      "0": "if you like any of that stuff and wanna talk about it you canr reach me",
+      "1": "here"
     }
+  },
+  "header": {
+    "contact": "contact"
+  },
+  "footer": {
+    "love": "</> with <3 by Julia",
+    "gay": "be gay "
+  }
 }

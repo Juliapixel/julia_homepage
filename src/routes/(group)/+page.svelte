@@ -22,17 +22,15 @@
     {$_("home.intro_main")}
     <span use:tooltip={{content:"help", animation: "perspective-subtle"}}>{$_("home.brazil")}</span>
 </p>
-<p>{$_("home.reach_on_discord")}</p>
-<p>
-    {$_("home.or_by")}
-    <a href="mailto:contact@juliapixel.com">email</a>
-    {$_("home.that_sorta_stuff")}
-</p>
-<p>
-    {$_("home.check_out_my")}
-    <a href="https://github.com/juliapixel/" target="_blank">github</a>
-    {$_("home.woah")}
-</p>
+<p>{$_("home.about_1.0")} <a href="https://tweaked.cc">ComputerCraft</a> {$_("home.about_1.1")}</p>
+<p>{$_("home.about_2.0")}</p>
+<p>{$_("home.likes.0")}:</p>
+<ul>
+    <li>{$_("home.likes.1")}</li>
+    <li>{$_("home.likes.2")}</li>
+    <li>Svelte</li>
+</ul>
+<p>{$_("home.contact.0")} <a href="/contact">{$_("home.contact.1")}</a></p>
 <div class="mt-8">
     {$_("home.my_current_time_is")}: <JuliasTime />
 </div>

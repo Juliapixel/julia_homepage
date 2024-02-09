@@ -4,6 +4,7 @@
     import Header from "$lib/Header.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
     import type { LayoutData } from "./$types";
+    import { _ } from "svelte-i18n";
 
     export let data: LayoutData;
 </script>
@@ -18,7 +19,7 @@
             <button>faq</button>
         </a>
         <a href="/contact">
-            <button>contact</button>
+            <button>{$_("header.contact")}</button>
         </a>
     </svelte:fragment>
     <svelte:fragment slot="right">
@@ -43,9 +44,9 @@
         </a>
     </svelte:fragment>
     <svelte:fragment slot="info">
-        <p>{"</>"} with {"<3"} by Julia</p>
+        <p>{$_("footer.love")}</p>
         <div class="flex mt-20">
-            <p>be gay &ThickSpace;</p><div class="text-lg spinnu">🏳️‍⚧️</div>
+            <p class="pr-3">{$_("footer.gay")}</p><div class="text-lg spinnu">🏳️‍⚧️</div>
         </div>
     </svelte:fragment>
 </Footer>
