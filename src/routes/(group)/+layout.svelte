@@ -14,11 +14,11 @@
             <h1>{">_<"}</h1>
         </a>
         <VerticalSeparator height_class="h-8" />
-        <a href="/faq" class="text-black">
+        <a href="/faq">
             <button>faq</button>
         </a>
-        <a href="/projects" class="text-black">
-            <button>projects</button>
+        <a href="/contact">
+            <button>contact</button>
         </a>
     </svelte:fragment>
     <svelte:fragment slot="right">

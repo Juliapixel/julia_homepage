@@ -25,12 +25,12 @@
 <p>{$_("home.reach_on_discord")}</p>
 <p>
     {$_("home.or_by")}
-    <a href="mailto:homepage@juliapixel.com">email</a>
+    <a href="mailto:contact@juliapixel.com">email</a>
     {$_("home.that_sorta_stuff")}
 </p>
 <p>
     {$_("home.check_out_my")}
-    <a href="https://github.com/juliapixel/">github</a>
+    <a href="https://github.com/juliapixel/" target="_blank">github</a>
     {$_("home.woah")}
 </p>
 <div class="mt-8">
