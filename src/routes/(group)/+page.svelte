@@ -25,7 +25,7 @@
 <p>{$_("home.reach_on_discord")}</p>
 <p>
     {$_("home.or_by")}
-    <a href="mailto://homepage@juliapixel.com">email</a>
+    <a href="mailto:homepage@juliapixel.com">email</a>
     {$_("home.that_sorta_stuff")}
 </p>
 <p>
