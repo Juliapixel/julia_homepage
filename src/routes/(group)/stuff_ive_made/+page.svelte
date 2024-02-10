@@ -7,8 +7,9 @@ import { _ } from "svelte-i18n";
 
 <h1><a href="https://github.com/Juliapixel/make_it_braille">make_it_braille</a></h1>
 <p>{$_("sim.mit.0")}:</p>
-<div class="inline-flex max-w-full flex-nowrap rounded-lg p-5 overflow-auto [text-shadow:none] font-sourceCodePro text-sm text-neutral-200 bg-zinc-900 border border-zinc-700">
-<pre>
+<div class="inline-flex max-w-full flex-nowrap rounded-lg p-5 overflow-auto [text-shadow:none] text-sm text-neutral-200 bg-zinc-900 border border-zinc-700">
+<pre class="font-sourceCodePro">
+$ make_it_braille --width 100 --dithering sierra2 ./uuh.png
 ⡯⣹⢹⡍⡯⡹⡍⣯⢩⣏⡽⣭⣭⡭⡯⡽⢭⠯⡽⢭⢯⡝⣽⢹⡏⣟⢽⢹⡝⣝⢝⢝⣝⢏⡟⣽⢹⢝⡝⡽⣍⢯⢭⡭⣭⢭⡍⣧⢙⡔
 ⣇⢗⣎⢺⡸⡪⢷⢽⢾⡸⣓⢗⡞⣮⠳⡝⣭⠫⣜⢱⡃⡗⡱⢃⠝⡸⡑⡋⢖⠡⢎⠵⠱⠍⠞⠨⠓⢑⠙⠪⡊⡗⢳⡕⣗⢺⢲⢕⡭⡺
 ⣇⢷⢸⡇⡯⠙⠝⠱⠋⢖⢱⣊⢖⣅⡋⣞⢸⢪⠎⣮⢱⢍⢎⠸⢠⢇⡼⡨⠎⠑⠁⡈⡀⢂⠐⠄⠂⠠⠌⠠⠠⡈⢪⠸⣅⢟⢼⢪⡎⣻
