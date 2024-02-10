@@ -28,10 +28,31 @@
     }
   },
   "header": {
-    "contact": "contact"
+    "contact": "contact",
+    "stuff_ive_made": "stuff i've made"
   },
   "footer": {
     "love": "</> with <3 by Julia",
     "gay": "be gay "
+  },
+  "sim": {
+    "mit": {
+      "0": "a rust crate that can be a both binary and library, can turn images into ascii art, kinda like"
+    },
+    "tpr": {
+      "0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
+      "1": "it supports a bunch of features of the protocol, including",
+      "2": "gotta find a picture of what that looks like cuz it's pretty cool ngl",
+      "list": {
+        "0": "image printing, with dithering (to make it look pretty woah)",
+        "1": "QR codes",
+        "2": "font styles and weight"
+      }
+    },
+    "tw": {
+      "0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
+      "1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance",
+      "title": "this website"
+    }
   }
 }

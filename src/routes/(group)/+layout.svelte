@@ -21,6 +21,9 @@
         <a href="/contact">
             <button>{$_("header.contact")}</button>
         </a>
+        <a href="/stuff_ive_made">
+            <button>{$_("header.stuff_ive_made")}</button>
+        </a>
     </svelte:fragment>
     <svelte:fragment slot="right">
         <DarkToggle dark_enabled={data.is_dark}/>
@@ -50,6 +53,8 @@
         </div>
     </svelte:fragment>
 </Footer>
+<br />
+<br />
 
 <style>
     .spinnu {

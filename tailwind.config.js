@@ -9,6 +9,7 @@ export default {
         },
         extend: {
             fontFamily: {
+                sourceCodePro: ["SourceCodePro"],
                 vecTerminus: ["vecterminus14"],
                 tamzen: ["Tamzen"]
             },

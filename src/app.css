@@ -12,6 +12,13 @@
     src: url("/Tamzen8x16r.ttf");
 }
 
+@font-face {
+    font-family: SourceCodePro;
+    font-style: normal;
+    font-weight: 200 900;
+    src: url("/Source_Code_Pro.woff2");
+}
+
 @layer base {
     html {
         @apply font-mono;
@@ -34,6 +41,11 @@
 
     h1 {
         @apply text-[32px] mt-2 mb-2
+    }
+
+    code {
+        @apply [text-shadow:none] font-sourceCodePro text-sm p-5;
+        @apply dark:bg-zinc-900
     }
 
     ul {
