@@ -37,7 +37,7 @@
   },
   "sim": {
     "mit": {
-      "0": "a rust crate that can be a both binary and library, can turn images into ascii art, kinda like"
+      "0": "a rust crate that can be both installed as a binary and used as a library, can turn images into ascii art, kinda like"
     },
     "tpr": {
       "0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
