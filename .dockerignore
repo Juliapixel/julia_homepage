@@ -1,5 +1,6 @@
 Dockerfile
 .dockerignore
+justfile
 README.md
 build/
 .svelte-kit/
