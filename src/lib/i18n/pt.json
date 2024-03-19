@@ -1,58 +1,58 @@
 {
-  "home": {
-    "yo": "eai",
-    "intro_main": "meu nome é Júlia (ela/dela), \"desenvolvedora\" de \"software\"",
-    "brazil": "brasileira",
-    "reach_on_discord": "vc pode me chamar no discord (@Juliapixel) se quiser",
-    "check_out_my": "tb da uma olhada no meu",
-    "woah": "uau",
-    "or_by": "ou por",
-    "that_sorta_stuff": "se vc gostar desse tipo de coisa",
-    "my_current_time_is": "meu horário atual é",
-    "adding_more_stuff": "eu vou colocar mais coisas aqui no futuro ok",
-    "about_1": {
-      "0": "eu programo desde que eu tenho, sla, 14 anos, programando turtles de ",
-      "1": "no minecraft"
+    "home": {
+        "yo": "eai",
+        "intro_main": "meu nome é Júlia (ela/dela), \"desenvolvedora\" de \"software\"",
+        "brazil": "brasileira",
+        "reach_on_discord": "vc pode me chamar no discord (@Juliapixel) se quiser",
+        "check_out_my": "tb da uma olhada no meu",
+        "woah": "uau",
+        "or_by": "ou por",
+        "that_sorta_stuff": "se vc gostar desse tipo de coisa",
+        "my_current_time_is": "meu horário atual é",
+        "adding_more_stuff": "eu vou colocar mais coisas aqui no futuro ok",
+        "about_1": {
+            "0": "eu programo desde que eu tenho, sla, 14 anos, programando turtles de ",
+            "1": "no minecraft"
+        },
+        "about_2": {
+            "0": "atualmente eu programo principalmente em Rust, trabalhando em projetos pessoais, que podem ser vistos no meu Github"
+        },
+        "likes": {
+            "0": "eu também gosto de",
+            "1": "impressão 3D",
+            "2": "modelagem CAD"
+        },
+        "contact": {
+            "0": "se vc gosta de alguma dessas coisas e quer conversar sobre, vc pode me encontrar",
+            "1": "aqui"
+        }
     },
-    "about_2": {
-      "0": "atualmente eu programo principalmente em Rust, trabalhando em projetos pessoais, que podem ser vistos no meu Github"
+    "header": {
+        "contact": "contato",
+        "stuff_ive_made": "coisas q eu fiz"
     },
-    "likes": {
-      "0": "eu também gosto de",
-      "1": "impressão 3D",
-      "2": "modelagem CAD"
+    "footer": {
+        "love": "</> com <3 pela Júlia",
+        "gay": "be gay "
     },
-    "contact": {
-      "0": "se vc gosta de alguma dessas coisas e quer conversar sobre, vc pode me encontrar",
-      "1": "aqui"
+    "sim": {
+        "mit": {
+            "0": "uma crate rust, que pode ser tanto um binário executável quanto uma lib, que transforma imagens em arte ascii, tipo"
+        },
+        "tpr": {
+            "0": "um driver userspace e ferramenta de linha de comando pra impressoras térmicas que usam o protocolo ESC-POS, infelizmente ela só funciona no windows.",
+            "1": "ela suporta várias funções do protocolo, como",
+            "2": "preciso achar uma foto de como fica, pq é bem legal...",
+            "list": {
+                "0": "impressão de imagem, com dithering (pra ficar bonitinho)",
+                "1": "QR codes",
+                "2": "estilos de fonte"
+            }
+        },
+        "tw": {
+            "0": "feito com Svelte, talvez algum dia eu coloque um blog ou alguma coisa com um backend em rust",
+            "1": "ele está rodando, junto com algumas outras coisas minhas, em uma instância grátis x64 da oracle cloud",
+            "title": "esse site"
+        }
     }
-  },
-  "header": {
-    "contact": "contato",
-    "stuff_ive_made": "coisas q eu fiz"
-  },
-  "footer": {
-    "love": "</> com <3 pela Júlia",
-    "gay": "be gay "
-  },
-  "sim": {
-    "mit": {
-      "0": "uma crate rust, que pode ser tanto um binário executável quanto uma lib, que transforma imagens em arte ascii, tipo"
-    },
-    "tpr": {
-      "0": "um driver userspace e ferramenta de linha de comando pra impressoras térmicas que usam o protocolo ESC-POS, infelizmente ela só funciona no windows.",
-      "1": "ela suporta várias funções do protocolo, como",
-      "2": "preciso achar uma foto de como fica, pq é bem legal...",
-      "list": {
-        "0": "impressão de imagem, com dithering (pra ficar bonitinho)",
-        "1": "QR codes",
-        "2": "estilos de fonte"
-      }
-    },
-    "tw": {
-      "0": "feito com Svelte, talvez algum dia eu coloque um blog ou alguma coisa com um backend em rust",
-      "1": "ele está rodando, junto com algumas outras coisas minhas, em uma instância grátis x64 da oracle cloud",
-      "title": "esse site"
-    }
-  }
 }

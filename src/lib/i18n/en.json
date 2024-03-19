@@ -1,58 +1,58 @@
 {
-  "home": {
-    "yo": "yo",
-    "intro_main": "i'm Julia (she/her), a 19yo \"software developer\" from",
-    "brazil": "brazil",
-    "about_1": {
-      "0": "i've been coding since i was like 14 years old, making Lua scripts for",
-      "1": "turtles on minecraft"
+    "home": {
+        "yo": "yo",
+        "intro_main": "i'm Julia (she/her), a 19yo \"software developer\" from",
+        "brazil": "brazil",
+        "about_1": {
+            "0": "i've been coding since i was like 14 years old, making Lua scripts for",
+            "1": "turtles on minecraft"
+        },
+        "about_2": {
+            "0": "noawadays i mostly write Rust, making personal projects that can be seen on my Github"
+        },
+        "reach_on_discord": "u can reach me on discord @Juliapixel if u want to",
+        "check_out_my": "also check out my",
+        "woah": "woah",
+        "or_by": "or by",
+        "that_sorta_stuff": "if ur into that sorta stuff",
+        "my_current_time_is": "my current time is",
+        "adding_more_stuff": "also i'm adding more stuff on here eventually ok",
+        "likes": {
+            "0": "i also happen to like",
+            "1": "3D printing",
+            "2": "CAD modeling"
+        },
+        "contact": {
+            "0": "if you like any of that stuff and wanna talk about it you can reach me",
+            "1": "here"
+        }
     },
-    "about_2": {
-      "0": "noawadays i mostly write Rust, making personal projects that can be seen on my Github"
+    "header": {
+        "contact": "contact",
+        "stuff_ive_made": "stuff i've made"
     },
-    "reach_on_discord": "u can reach me on discord @Juliapixel if u want to",
-    "check_out_my": "also check out my",
-    "woah": "woah",
-    "or_by": "or by",
-    "that_sorta_stuff": "if ur into that sorta stuff",
-    "my_current_time_is": "my current time is",
-    "adding_more_stuff": "also i'm adding more stuff on here eventually ok",
-    "likes": {
-      "0": "i also happen to like",
-      "1": "3D printing",
-      "2": "CAD modeling"
+    "footer": {
+        "love": "</> with <3 by Julia",
+        "gay": "be gay "
     },
-    "contact": {
-      "0": "if you like any of that stuff and wanna talk about it you can reach me",
-      "1": "here"
+    "sim": {
+        "mit": {
+            "0": "a rust crate that can be both installed as a binary and used as a library, can turn images into ascii art, kinda like"
+        },
+        "tpr": {
+            "0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
+            "1": "it supports a bunch of features of the protocol, including",
+            "2": "gotta find a picture of what that looks like cuz it's pretty cool ngl",
+            "list": {
+                "0": "image printing, with dithering (to make it look pretty woah)",
+                "1": "QR codes",
+                "2": "font styles and weight"
+            }
+        },
+        "tw": {
+            "0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
+            "1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance",
+            "title": "this website"
+        }
     }
-  },
-  "header": {
-    "contact": "contact",
-    "stuff_ive_made": "stuff i've made"
-  },
-  "footer": {
-    "love": "</> with <3 by Julia",
-    "gay": "be gay "
-  },
-  "sim": {
-    "mit": {
-      "0": "a rust crate that can be both installed as a binary and used as a library, can turn images into ascii art, kinda like"
-    },
-    "tpr": {
-      "0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
-      "1": "it supports a bunch of features of the protocol, including",
-      "2": "gotta find a picture of what that looks like cuz it's pretty cool ngl",
-      "list": {
-        "0": "image printing, with dithering (to make it look pretty woah)",
-        "1": "QR codes",
-        "2": "font styles and weight"
-      }
-    },
-    "tw": {
-      "0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
-      "1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance",
-      "title": "this website"
-    }
-  }
 }
