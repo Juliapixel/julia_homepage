@@ -4,4 +4,6 @@ waow...
 
 ## credits
 
-cool font i used: https://github.com/tisimst/vecterminus
+cool fonts i used:
+- [vecterminus](https://github.com/tisimst/vecterminus)
+- [tamzen](https://github.com/sunaku/tamzen-font)
