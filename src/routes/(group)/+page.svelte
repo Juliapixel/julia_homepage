@@ -30,6 +30,7 @@
 <p>{$_("home.likes.0")}:</p>
 <ul>
     <li>{$_("home.likes.1")}</li>
+    <li>videogames</li>
     <li>{$_("home.likes.2")}</li>
     <li>Svelte</li>
 </ul>
