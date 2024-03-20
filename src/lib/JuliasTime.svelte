@@ -1,4 +1,5 @@
 <script>
+    import { building } from "$app/environment";
     import { onMount } from "svelte";
 
     let time = new Date();
@@ -14,6 +15,8 @@
     })
 </script>
 
-{`${time.getUTCFullYear()}-${(time.getUTCMonth() + 1).toString().padStart(2, "0")}-${time.getUTCDate().toString().padStart(2, "0")}`}
-{`${time.getUTCHours().toString().padStart(2, "0")}:${time.getUTCMinutes().toString().padStart(2, "0")}:${time.getUTCSeconds().toString().padStart(2, "0")}`}
+{#if !building}
+    {`${time.getUTCFullYear()}-${(time.getUTCMonth() + 1).toString().padStart(2, "0")}-${time.getUTCDate().toString().padStart(2, "0")}`}
+    {`${time.getUTCHours().toString().padStart(2, "0")}:${time.getUTCMinutes().toString().padStart(2, "0")}:${time.getUTCSeconds().toString().padStart(2, "0")}`}
+{/if}
 UTC-3
