@@ -19,7 +19,7 @@
 
 <Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png"/>
 
-<BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
+<BloomImage src="/fire.gif" alt="epic cat!!!1!"/>
 <h1>{$_("home.yo")}</h1>
 <p>
     {$_("home.intro_main")}
