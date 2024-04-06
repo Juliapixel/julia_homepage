@@ -49,7 +49,7 @@
     }
 
     ul {
-        @apply pl-4;
+        @apply pl-6;
     }
 
     li::marker {
