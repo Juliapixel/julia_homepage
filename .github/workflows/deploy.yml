@@ -1,0 +1,29 @@
+name: "Deploy to my website"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+      - name: build woah
+        run: pnpm install && pnpm run build
+      - name: save build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: build_output
+          path: build
