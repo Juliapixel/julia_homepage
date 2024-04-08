@@ -27,3 +27,15 @@ jobs:
         with:
           name: build_output
           path: build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: download build
+        uses: actions/download-artifact@v4
+        with:
+          name: build_output
+          path: build
+      - name: deploy to vps
+        run: |
+          echo ${{ secrets.VPS_SSH_KEY }} > actions_rsa;
+          rsync -azv --chown=root:homepage_dev --chmod=D775,F664 --del -O -e "ssh -i ./actions_rsa" ./build github_actions@${{ secrets.VPS_IP }}:/var/www/homepage
