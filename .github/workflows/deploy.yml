@@ -38,5 +38,5 @@ jobs:
           path: build
       - name: deploy to vps
         run: |
-          echo ${{ secrets.VPS_SSH_KEY }} > actions_rsa;
+          echo "${{ secrets.VPS_SSH_KEY }}" > actions_rsa;
           rsync -azv --chown=root:homepage_dev --chmod=D775,F664 --del -O -e "ssh -i ./actions_rsa" ./build github_actions@${{ secrets.VPS_IP }}:/var/www/homepage
