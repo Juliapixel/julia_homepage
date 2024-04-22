@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { browser } from "$app/environment";
     import { page } from "$app/stores";
     import DarkToggle from "$lib/DarkToggle.svelte";
     import Footer from "$lib/Footer.svelte";
@@ -11,11 +12,15 @@
     export let data: LayoutData;
 
     function fakeParams(url: URL): string {
-        let str = String()
-        for (const param of url.searchParams) {
-            str += `--${param[0]}="${encodeURIComponent(param[1])}" `
+        if (browser) {
+            let str = String()
+            for (const param of url.searchParams) {
+                str += `--${param[0]}="${encodeURIComponent(param[1])}" `
+            }
+            return str
+        } else {
+            return ""
         }
-        return str
     }
 </script>
 
