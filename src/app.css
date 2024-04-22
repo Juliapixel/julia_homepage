@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: vecterminus14;
-    src: url("/VecTerminus14Medium.otf");
+    font-family: vecterminus;
+    src: url("/VecTerminus28Bold.otf");
 }
 
 @font-face {
@@ -28,8 +28,8 @@
         @apply transition-colors;
         @apply min-h-[100vh];
         @apply text-[16px];
-        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:[text-shadow:_#bbb_0_0_15px] dark:selection:bg-violet-500;
-        @apply bg-zinc-200 text-black [text-shadow:_#aaa_0_0_5px] selection:bg-violet-400;
+        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:selection:bg-violet-500;
+        @apply bg-zinc-200 text-black selection:bg-violet-400;
     }
 
     button {

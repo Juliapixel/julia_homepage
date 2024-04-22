@@ -4,13 +4,13 @@ export default {
     theme: {
         fontFamily: {
             // "sans": ["vecterminus14", "ui-monospace", "monospace"],
-            mono: ["Tamzen", "ui-monospace", "monospace"],
+            mono: ["vecterminus", "ui-monospace", "monospace"],
             // "body": ["vecterminus14", "ui-monospace", "monospace"]
         },
         extend: {
             fontFamily: {
                 sourceCodePro: ["SourceCodePro"],
-                vecTerminus: ["vecterminus14"],
+                vecTerminus: ["vecterminus"],
                 tamzen: ["Tamzen"],
             },
         },

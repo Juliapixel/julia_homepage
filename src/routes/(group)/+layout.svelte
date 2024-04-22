@@ -1,12 +1,22 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     import DarkToggle from "$lib/DarkToggle.svelte";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+    import RetroBox from "$lib/RetroBox.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
     import type { LayoutData } from "./$types";
     import { _ } from "svelte-i18n";
 
     export let data: LayoutData;
+
+    function fakeParams(url: URL): string {
+        let str = String()
+        for (const param of url.searchParams) {
+            str += `--${param[0]}="${encodeURIComponent(param[1])}" `
+        }
+        return str
+    }
 </script>
 
 <Header>
@@ -29,8 +39,10 @@
         <DarkToggle dark_enabled={data.is_dark}/>
     </svelte:fragment>
 </Header>
-<div class="ml-[20%] mr-[20%] max-md:ml-0 max-md:mr-0 p-8 mt-12 shadow-lg dark:bg-zinc-800 bg-zinc-100 rounded-xl">
-    <slot />
+<div class="lg:mx-[20%]">
+    <RetroBox title="/usr/bin/homepage {fakeParams($page.url)}{$page.url.pathname}">
+        <slot />
+    </RetroBox>
 </div>
 <Footer>
     <svelte:fragment slot="links">
