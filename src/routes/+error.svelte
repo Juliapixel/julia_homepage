@@ -1,6 +1,5 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import BloomImage from "$lib/BloomImage.svelte";
     import DarkToggle from "$lib/DarkToggle.svelte"
     import ErrorText from "$lib/ErrorText.svelte"
     import { onMount } from "svelte";
@@ -25,7 +24,7 @@
 
 
 <div class="flex flex-col justify-center items-center text-center min-h-[100vh]">
-    <BloomImage src="/uuh.webp" alt="epic cat!!!1!"/>
+    <img src="/uuh.webp" alt="epic cat!!!1!" />
     <div bind:this={msg_box} />
     <p>Error {$page.status}</p>
     <div>

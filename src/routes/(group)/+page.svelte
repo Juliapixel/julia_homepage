@@ -1,5 +1,4 @@
 <script lang="ts">
-    import BloomImage from "$lib/BloomImage.svelte";
     import JuliasTime from "$lib/JuliasTime.svelte";
     import Meta from "$lib/Meta.svelte";
     import { _, locale, locales } from "svelte-i18n";
@@ -19,7 +18,7 @@
 
 <Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png"/>
 
-<BloomImage src="/fire.gif" alt="epic cat!!!1!"/>
+<img src="/fire.gif" alt="epic cat!!!1!" />
 <h1>{$_("home.yo")}</h1>
 <p>
     {$_("home.intro_main")}
