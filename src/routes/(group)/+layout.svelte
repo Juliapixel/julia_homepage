@@ -45,7 +45,7 @@
     </svelte:fragment>
 </Header>
 <div class="lg:mx-[20%]">
-    <RetroBox title="/usr/bin/homepage {fakeParams($page.url)}{$page.url.pathname}">
+    <RetroBox title="/usr/bin/homepage {fakeParams($page.url)}{$page.url.pathname}" bottom_text="made by julia">
         <slot />
     </RetroBox>
 </div>

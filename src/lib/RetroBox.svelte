@@ -1,6 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     export let title: string;
+    export let bottom_text: string | undefined = undefined;
 </script>
 
 <div class="p-[2px] border-4 border-r-neutral-700 border-b-neutral-700 bg-neutral-400">
@@ -15,4 +16,9 @@
     <main class="p-8 mt-2 border-4 border-t-neutral-700 border-l-neutral-700 m-1 bg-neutral-800">
         <slot />
     </main>
+    {#if bottom_text}
+    <footer class="px-2 text-end text-black ">
+        {bottom_text}
+    </footer>
+    {/if}
 </div>
