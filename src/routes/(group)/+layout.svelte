@@ -44,7 +44,7 @@
         <DarkToggle dark_enabled={data.is_dark}/>
     </svelte:fragment>
 </Header>
-<div class="lg:mx-[20%]">
+<div class="lg:mx-[20%] mt-8">
     <RetroBox title="/usr/bin/homepage {fakeParams($page.url)}{$page.url.pathname}" bottom_text="</> with <3 by Julia">
         <slot />
     </RetroBox>
