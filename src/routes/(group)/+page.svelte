@@ -35,5 +35,5 @@
 </ul>
 <p>{$_("home.contact.0")} <a href="/contact">{$_("home.contact.1")}</a></p>
 <div class="mt-8">
-    {$_("home.my_current_time_is")}: <JuliasTime />
+    {$_("home.my_current_time_is")}: <JuliasTime offset={-3}/>
 </div>
