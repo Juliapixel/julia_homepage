@@ -70,8 +70,6 @@
         </div>
     </svelte:fragment>
 </Footer>
-<br />
-<br />
 
 <style>
     .spinnu {
