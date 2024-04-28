@@ -41,7 +41,8 @@
         </a>
     </svelte:fragment>
     <svelte:fragment slot="right">
-        <DarkToggle dark_enabled={data.is_dark} />
+        <!-- no dark theme for now ig -->
+        <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
     </svelte:fragment>
 </Header>
 <div class="lg:mx-[20%] mt-8">
