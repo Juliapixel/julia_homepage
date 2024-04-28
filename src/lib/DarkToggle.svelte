@@ -15,7 +15,7 @@
             dark_enabled = true;
             doc.classList.add("dark");
         }
-    })
+    });
 
     function handleToggle(val: boolean) {
         if (val) {

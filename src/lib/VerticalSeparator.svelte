@@ -2,4 +2,6 @@
     export let height_class: string = "";
 </script>
 
-<div class="{height_class} border-r dark:border-neutral-700 border-neutral-400" />
+<div
+    class="{height_class} border-r dark:border-neutral-700 border-neutral-400"
+/>

@@ -6,7 +6,7 @@
         "orm...",
     ];
 
-    const message = messages[Math.floor((Math.random() * messages.length))];
+    const message = messages[Math.floor(Math.random() * messages.length)];
 </script>
 
 <h1>{message}</h1>

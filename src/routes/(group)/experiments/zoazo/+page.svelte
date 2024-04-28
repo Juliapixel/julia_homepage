@@ -6,7 +6,7 @@
         try {
             let resp = await fetch("https://stuff.juliapixel.com/zoazo");
             zoazo = await resp.text();
-            is_error = false
+            is_error = false;
         } catch (error) {
             zoazo = String(error);
             is_error = true;

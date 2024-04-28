@@ -35,7 +35,7 @@
         @apply p-2;
         @apply bg-neutral-400 text-black;
         @apply hover:bg-neutral-500;
-        @apply border-4 border-b-neutral-700 border-r-neutral-700
+        @apply border-4 border-b-neutral-700 border-r-neutral-700;
     }
 
     h1 {
