@@ -28,15 +28,14 @@
         @apply transition-colors;
         @apply min-h-[100vh];
         @apply text-[16px];
-        @apply dark:bg-zinc-900 dark:text-neutral-300 dark:selection:bg-violet-500;
-        @apply bg-zinc-200 text-black selection:bg-violet-400;
+        @apply bg-zinc-900 text-neutral-300 selection:bg-violet-400;
     }
 
     button {
-        @apply p-2 rounded-lg shadow-lg transition-colors;
-        @apply dark:bg-zinc-800 bg-zinc-200;
-        @apply border dark:border-zinc-700 border-zinc-300;
-        @apply border dark:hover:bg-zinc-700 hover:bg-zinc-300;
+        @apply p-2;
+        @apply bg-neutral-400 text-black;
+        @apply hover:bg-neutral-500;
+        @apply border-4 border-b-neutral-700 border-r-neutral-700
     }
 
     h1 {
@@ -45,7 +44,6 @@
 
     code {
         @apply [text-shadow:none] font-sourceCodePro text-sm p-5;
-        @apply dark:bg-zinc-900;
     }
 
     ul {
@@ -63,12 +61,11 @@
 
     a {
         @apply underline underline-offset-2;
-        @apply dark:text-white;
         @apply text-blue-400;
     }
 
     a > * {
-        @apply dark:text-neutral-300 text-black;
+        @apply text-black;
     }
 }
 
