@@ -18,9 +18,10 @@
         if (!url_error) {
             // the vscode Svelte extension shows an error on this for god knows
             // what reason but it works so idc
+            const params = new URLSearchParams(form_data).toString();
+
             let resp = await fetch(
-                "https://stuff.juliapixel.com/braille?" +
-                    new URLSearchParams(form_data).toString(),
+                `https://stuff.juliapixel.com/braille?${params}`,
             );
             braille = resp;
         }
