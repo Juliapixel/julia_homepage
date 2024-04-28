@@ -16,6 +16,8 @@
         url_error = !URL.canParse(form_data.get("img_url")?.toString() ?? "");
 
         if (!url_error) {
+            // the vscode Svelte extension shows an error on this for god knows
+            // what reason but it works so idc
             let resp = await fetch("https://stuff.juliapixel.com/braille?" + new URLSearchParams(form_data).toString())
             braille = resp
         }
