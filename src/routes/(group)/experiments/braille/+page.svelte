@@ -25,8 +25,6 @@
             );
             braille = resp;
         }
-
-        type a = Iterable<[string, string]>;
     }
 
     function clearError() {
