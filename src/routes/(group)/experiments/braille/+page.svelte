@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Meta from "$lib/Meta.svelte";
+
     let url = "";
     let url_error = false;
 
@@ -31,6 +33,8 @@
         url_error = false;
     }
 </script>
+
+<Meta title="Braille Image" description="braille image experiment" />
 
 <form class="flex flex-col gap-2 mx-10" on:submit={handleSubmission}>
     <div class="flex flex-row">
