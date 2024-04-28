@@ -1,5 +1,6 @@
 <script lang="ts">
     let url = ""
+    let url_error = false;
 
     let width = 64;
     let auto_width = true;
@@ -12,19 +13,26 @@
         event.preventDefault()
         let form_data = new FormData(this)
 
-        if (URL.canParse(form_data.get("img_url")?.toString() ?? "")) {
+        url_error = !URL.canParse(form_data.get("img_url")?.toString() ?? "");
+
+        if (!url_error) {
             let resp = await fetch("https://stuff.juliapixel.com/braille?" + new URLSearchParams(form_data).toString())
             braille = resp
         }
 
         type a = Iterable<[string, string]>
     }
+
+    function clearError() {
+        url_error = false;
+    }
 </script>
 
 <form class="flex flex-col gap-2 mx-10" on:submit={handleSubmission}>
     <div class="flex flex-row">
         <label class="text-nowrap" for="img_url">Image URL:</label>
-        <input class="w-full" type="text" bind:value={url} name="img_url" placeholder="URL" />
+        <!-- holy fuck is this ever big and it's not even because of tailwind -->
+        <input class="w-full {url_error ? "border border-red-500" : "m-[1px]"}" on:input={clearError} bind:value={url} type="text" name="img_url" placeholder="URL" />
     </div>
     <div class="flex flex-row justify-center">
         <label for="width">Width:</label>
