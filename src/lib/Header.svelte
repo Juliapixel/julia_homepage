@@ -2,7 +2,7 @@
 </script>
 
 <header
-    class="flex flex-row items-center w-full justify-between dark:bg-zinc-800 bg-zinc-100 dark:border-b dark:border-b-zinc-700 shadow-sm"
+    class="flex flex-row items-center w-full justify-between bg-neutral-400 border-4 border-t-0 border-b-neutral-700 border-r-neutral-700"
 >
     <div class="flex flex-row items-center ml-3 space-x-3">
         <slot name="left" />

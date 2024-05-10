@@ -27,7 +27,7 @@
 <Header>
     <svelte:fragment slot="left">
         <a href="/" class="no-underline">
-            <h1 class="text-neutral-300">{">_<"}</h1>
+            <h1>{">_<"}</h1>
         </a>
         <VerticalSeparator height_class="h-8" />
         <a href="/faq">
@@ -55,7 +55,7 @@
         <slot />
     </RetroBox>
 </div>
-<Footer>
+<!-- <Footer>
     <svelte:fragment slot="links">
         <a href="https://github.com/juliapixel">
             <svg
@@ -88,7 +88,7 @@
             <div class="text-lg spinnu">🏳️‍⚧️</div>
         </div>
     </svelte:fragment>
-</Footer>
+</Footer> -->
 
 <style>
     .spinnu {

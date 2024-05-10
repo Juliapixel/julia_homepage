@@ -28,7 +28,7 @@
         @apply transition-colors;
         @apply min-h-[100vh];
         @apply text-[16px];
-        @apply bg-zinc-900 text-neutral-300 selection:bg-violet-400;
+        @apply bg-teal-800 text-neutral-300 selection:bg-violet-400;
     }
 
     button {
