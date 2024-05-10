@@ -9,8 +9,6 @@
     import type { LayoutData } from "./$types";
     import { _ } from "svelte-i18n";
 
-    export let data: LayoutData;
-
     function fakeParams(url: URL): string {
         if (browser) {
             let str = String();
@@ -88,7 +86,7 @@
             <div class="text-lg spinnu">🏳️‍⚧️</div>
         </div>
     </svelte:fragment>
-</Footer> -->
+</Footer>
 
 <style>
     .spinnu {
@@ -100,4 +98,4 @@
             transform: rotate(360deg);
         }
     }
-</style>
+</style> -->
