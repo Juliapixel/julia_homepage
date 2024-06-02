@@ -17,4 +17,4 @@ build_static: format
     pnpm build
 
 deploy ssh_target: build_static
-    tar -C ./build -zvc . | ssh {{ssh_target}} "sudo rm -r /var/www/homepage/*; sudo tar -xzC /var/www/homepage"
+    rsync -azv --chown=root:homepage_dev --chmod=D775,F664 --del -O ./build/* {{ssh_target}}:/var/www/homepage
