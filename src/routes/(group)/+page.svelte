@@ -1,19 +1,8 @@
 <script lang="ts">
     import JuliasTime from "$lib/JuliasTime.svelte";
     import Meta from "$lib/Meta.svelte";
-    import { _, locale, locales } from "svelte-i18n";
-    import tippy, { type Props } from "tippy.js";
-    import "tippy.js/animations/perspective-subtle.css";
-
-    function tooltip(n: Element, opts: Partial<Props>) {
-        const tooltip = tippy(n, opts);
-
-        return {
-            destroy() {
-                tooltip.destroy();
-            },
-        };
-    }
+    import tooltip from "$lib/utils/tooltip";
+    import { _ } from "svelte-i18n";
 </script>
 
 <Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png" />
@@ -22,9 +11,7 @@
 <h1>{$_("home.yo")}</h1>
 <p>
     {$_("home.intro_main")}
-    <span use:tooltip={{ content: "help", animation: "perspective-subtle" }}
-        >{$_("home.brazil")}</span
-    >
+    <span use:tooltip={{ content: "help" }}>{$_("home.brazil")}</span>
 </p>
 <p>
     {$_("home.about_1.0")} <a href="https://tweaked.cc">ComputerCraft</a>

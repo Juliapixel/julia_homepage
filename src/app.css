@@ -70,6 +70,6 @@
 }
 
 .tippy-box {
-    @apply p-2 border rounded-lg shadow-lg;
-    @apply dark:border-zinc-700 border-zinc-300;
+    @apply py-1 px-2 border rounded-lg shadow-lg;
+    @apply border-zinc-700 bg-zinc-800;
 }
