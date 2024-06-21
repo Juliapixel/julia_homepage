@@ -38,6 +38,29 @@
         @apply border-4 border-b-neutral-700 border-r-neutral-700;
     }
 
+    input[type="text"],
+    input[type="number"],
+    select {
+        @apply bg-zinc-900 py-0.5 px-2 border border-zinc-700;
+        appearance: textfield;
+    }
+
+    input[type="text"]:disabled,
+    input[type="number"]:disabled,
+    select:disabled {
+        @apply bg-zinc-800;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
     h1 {
         @apply text-[32px] mt-2 mb-2;
     }

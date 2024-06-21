@@ -1,7 +1,9 @@
 <script lang="ts">
+    import { building } from "$app/environment";
+    import { page } from "$app/stores";
     import Meta from "$lib/Meta.svelte";
 
-    let url = "";
+    let url = building ? "" : $page.url.origin + "/uuh.webp";
     let url_error = false;
 
     let width = 64;
@@ -20,6 +22,7 @@
         if (!url_error) {
             // the vscode Svelte extension shows an error on this for god knows
             // what reason but it works so idc
+            // @ts-ignore
             const params = new URLSearchParams(form_data).toString();
 
             let resp = await fetch(
@@ -37,7 +40,7 @@
 <Meta title="Braille Image" description="braille image experiment" />
 
 <form class="flex flex-col gap-2 mx-10" on:submit={handleSubmission}>
-    <div class="flex flex-row">
+    <div class="flex flex-row items-center">
         <label class="text-nowrap" for="img_url">Image URL:</label>
         <!-- holy fuck is this ever big and it's not even because of tailwind -->
         <input
@@ -49,7 +52,7 @@
             placeholder="URL"
         />
     </div>
-    <div class="flex flex-row justify-center">
+    <div class="flex flex-row items-center justify-center">
         <label for="width">Width:</label>
         <input
             class="w-full"
@@ -61,7 +64,7 @@
         <label for="auto_width">Auto:</label>
         <input type="checkbox" id="auto_width" bind:checked={auto_width} />
     </div>
-    <div class="flex flex-row justify-center">
+    <div class="flex flex-row items-center justify-center">
         <label for="height">Height:</label>
         <input
             class="w-full"
@@ -73,7 +76,7 @@
         <label for="auto_height">Auto:</label>
         <input type="checkbox" id="auto_height" bind:checked={auto_height} />
     </div>
-    <div class="flex flex-row">
+    <div class="flex flex-row items-center">
         <label for="dithering">Dithering:</label>
         <select class="w-full" name="dithering">
             <option value="sierra2">Sierra 2-row</option>
