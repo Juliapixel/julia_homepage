@@ -43,7 +43,7 @@
         <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
     </svelte:fragment>
 </Header>
-<div class="lg:mx-[20%] mt-8">
+<div class="lg:mx-[20%] mt-12 mb-32">
     <RetroBox
         title="/usr/bin/homepage {fakeParams(
             $page.url,
