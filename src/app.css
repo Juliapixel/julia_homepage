@@ -25,7 +25,6 @@
     }
 
     body {
-        @apply transition-colors;
         @apply min-h-[100vh];
         @apply text-[16px];
         @apply bg-teal-800 text-black selection:bg-violet-400;
