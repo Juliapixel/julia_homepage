@@ -56,6 +56,10 @@
       "0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
       "1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance, being served statically with Caddy",
       "title": "this website"
+    },
+    "pkb": {
+      "0": "a Palm® Portable Keyboard USB conversion using an STM32F411CEU6 dev board with the embassy-rs async embedded framework. actually works surprisingly well despite the somewhat common mistakes in the documentation I was able to find online.",
+      "1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard"
     }
   }
 }

@@ -46,6 +46,15 @@
 <img class="w-80" src="/thermal_printer.webp" alt={$_("sim.tpr.alt")} />
 
 <hr />
+
+<h1>
+    <a href="https://github.com/Juliapixel/palm_kb_rs">palm_kb_rs</a>
+</h1>
+<p>{$_("sim.pkb.0")}</p>
+<img class="w-[30rem]" src="https://cdn.juliapixel.com/julia/palm_kb.jpg" />
+<p>{$_("sim.pkb.1")}</p>
+
+<hr />
 <h1>
     <a href="https://github.com/Juliapixel/julia_homepage"
         >{$_("sim.tw.title")}</a
