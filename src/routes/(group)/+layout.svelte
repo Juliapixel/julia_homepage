@@ -1,12 +1,9 @@
 <script lang="ts">
     import { browser } from "$app/environment";
     import { page } from "$app/stores";
-    import DarkToggle from "$lib/DarkToggle.svelte";
-    import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import RetroBox from "$lib/RetroBox.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
-    import type { LayoutData } from "./$types";
     import { _ } from "svelte-i18n";
 
     function fakeParams(url: URL): string {
