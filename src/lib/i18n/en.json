@@ -59,7 +59,8 @@
     },
     "pkb": {
       "0": "a Palm® Portable Keyboard USB conversion using an STM32F411CEU6 dev board with the embassy-rs async embedded framework. actually works surprisingly well despite the somewhat common mistakes in the documentation I was able to find online.",
-      "1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard"
+      "1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard",
+      "alt": "a picture of my desk, on it is a Palm folding keyboard, with wires connected to the connector leads on it and to a breadboard, which holds an STM32 dev board and a few other components. It looks very unstable and prone to break at any moment."
     }
   }
 }

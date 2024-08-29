@@ -2,7 +2,8 @@
   "sim": {
     "pkb": {
       "0": "uma conversão USB de um Palm® Portable Keyboard usando uma placa de desenvolvimento STM32F411CEU6 com o framework async embassy-rs. funciona surpreendentemente bem, apesar da documentação que consegui encontrar online ser bem xôxa.",
-      "1": "o plano era fazer um circuito impresso customizado, mas acontece que design eletrônico é bem difícil"
+      "1": "o plano era fazer um circuito impresso customizado, mas acontece que design eletrônico é bem difícil",
+      "alt": "uma foto da minha mesa, nela está um teclado dobrável Palm, com fios conectados aos conectores e a uma breadboard, que contém uma placa de desenvolvimento STM32 e alguns outros componentes. tudo parece muito instável e propenso a quebrar a qualquer momento."
     }
   }
 }
