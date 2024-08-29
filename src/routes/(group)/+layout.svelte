@@ -29,13 +29,13 @@
         </a>
         <VerticalSeparator height_class="h-8" />
         <a href="/faq">
-            <button>faq</button>
+            <button tabindex="-1">faq</button>
         </a>
         <a href="/contact">
-            <button>{$_("header.contact")}</button>
+            <button tabindex="-1">{$_("header.contact")}</button>
         </a>
         <a href="/stuff_ive_made">
-            <button>{$_("header.stuff_ive_made")}</button>
+            <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
         </a>
     </svelte:fragment>
     <svelte:fragment slot="right">
