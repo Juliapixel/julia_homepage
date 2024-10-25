@@ -7,12 +7,12 @@
         "erm...",
         "orm...",
         "well, THAT just happened...",
-        "he's right behind me, isn't he?"
+        "he's right behind me, isn't he?",
     ];
 
     let message;
     if (building) {
-        message = messages[0]
+        message = messages[0];
     } else {
         message = messages[Math.floor(Math.random() * messages.length)];
     }

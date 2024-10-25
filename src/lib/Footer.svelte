@@ -2,8 +2,8 @@
     import type { Snippet } from "svelte";
 
     interface Props {
-        links?: Snippet
-        info?: Snippet
+        links?: Snippet;
+        info?: Snippet;
     }
 
     let { links, info }: Props = $props();

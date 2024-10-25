@@ -6,7 +6,7 @@
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
     import { _ } from "svelte-i18n";
     interface Props {
-        children?: import('svelte').Snippet;
+        children?: import("svelte").Snippet;
     }
 
     let { children }: Props = $props();
@@ -26,27 +26,23 @@
 
 <Header>
     {#snippet left()}
-    
-            <a href="/" class="no-underline">
-                <h1>{">_<"}</h1>
-            </a>
-            <VerticalSeparator height_class="h-8" />
-            <a href="/faq">
-                <button tabindex="-1">faq</button>
-            </a>
-            <a href="/contact">
-                <button tabindex="-1">{$_("header.contact")}</button>
-            </a>
-            <a href="/stuff_ive_made">
-                <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
-            </a>
-        
+        <a href="/" class="no-underline">
+            <h1>{">_<"}</h1>
+        </a>
+        <VerticalSeparator height_class="h-8" />
+        <a href="/faq">
+            <button tabindex="-1">faq</button>
+        </a>
+        <a href="/contact">
+            <button tabindex="-1">{$_("header.contact")}</button>
+        </a>
+        <a href="/stuff_ive_made">
+            <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
+        </a>
     {/snippet}
     {#snippet right()}
-    
-            <!-- no dark theme for now ig -->
-            <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
-        
+        <!-- no dark theme for now ig -->
+        <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
     {/snippet}
 </Header>
 <div class="lg:mx-[20%] mt-12 mb-32">

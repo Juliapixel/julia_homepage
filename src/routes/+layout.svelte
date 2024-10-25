@@ -3,7 +3,7 @@
     import "../app.css";
 
     interface Props {
-        children: Snippet
+        children: Snippet;
     }
 
     let { children }: Props = $props();

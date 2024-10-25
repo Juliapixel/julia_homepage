@@ -86,7 +86,7 @@
     </div>
     <button>
         Generate Braille
-        <input type="submit" value=""/>
+        <input type="submit" value="" />
     </button>
 </form>
 

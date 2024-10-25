@@ -1,7 +1,7 @@
 <script lang="ts">
     interface Props {
-        left?: import('svelte').Snippet;
-        right?: import('svelte').Snippet;
+        left?: import("svelte").Snippet;
+        right?: import("svelte").Snippet;
     }
 
     let { left, right }: Props = $props();

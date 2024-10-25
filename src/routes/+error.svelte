@@ -9,7 +9,7 @@
     onMount(() => {
         mount(ErrorText, {
             target: msg_box,
-        })
+        });
     });
 
     function handleClick() {
