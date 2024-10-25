@@ -5,6 +5,11 @@
     import RetroBox from "$lib/RetroBox.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
     import { _ } from "svelte-i18n";
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
 
     function fakeParams(url: URL): string {
         if (browser) {
@@ -20,25 +25,29 @@
 </script>
 
 <Header>
-    <svelte:fragment slot="left">
-        <a href="/" class="no-underline">
-            <h1>{">_<"}</h1>
-        </a>
-        <VerticalSeparator height_class="h-8" />
-        <a href="/faq">
-            <button tabindex="-1">faq</button>
-        </a>
-        <a href="/contact">
-            <button tabindex="-1">{$_("header.contact")}</button>
-        </a>
-        <a href="/stuff_ive_made">
-            <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
-        </a>
-    </svelte:fragment>
-    <svelte:fragment slot="right">
-        <!-- no dark theme for now ig -->
-        <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
-    </svelte:fragment>
+    {#snippet left()}
+    
+            <a href="/" class="no-underline">
+                <h1>{">_<"}</h1>
+            </a>
+            <VerticalSeparator height_class="h-8" />
+            <a href="/faq">
+                <button tabindex="-1">faq</button>
+            </a>
+            <a href="/contact">
+                <button tabindex="-1">{$_("header.contact")}</button>
+            </a>
+            <a href="/stuff_ive_made">
+                <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
+            </a>
+        
+    {/snippet}
+    {#snippet right()}
+    
+            <!-- no dark theme for now ig -->
+            <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
+        
+    {/snippet}
 </Header>
 <div class="lg:mx-[20%] mt-12 mb-32">
     <RetroBox
@@ -47,7 +56,7 @@
         )}serve {`"${$page.url.pathname}"`}"
         bottom_text="</> with <3 by Julia"
     >
-        <slot />
+        {@render children?.()}
     </RetroBox>
 </div>
 <!-- <Footer>

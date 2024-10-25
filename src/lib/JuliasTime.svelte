@@ -2,15 +2,18 @@
     import { building } from "$app/environment";
     import { onMount } from "svelte";
 
-    /** offset from UTC in hours (only integers pls) */
-    export let offset: number;
+    interface Props {
+        /** offset from UTC in hours (only integers pls) */
+        offset: number;
+    }
+
+    let { offset }: Props = $props();
 
     if (Math.trunc(offset) != offset) {
         throw new Error("offset must be an integer");
     }
 
-    let time = new Date();
-    time.setUTCMilliseconds(time.getUTCMilliseconds() + 3600 * 1000 * offset);
+    let time = $state(new Date());
 
     onMount(() => {
         const interval = setInterval(() => {

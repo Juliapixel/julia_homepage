@@ -3,15 +3,15 @@
     import { page } from "$app/stores";
     import Meta from "$lib/Meta.svelte";
 
-    let url = building ? "" : $page.url.origin + "/uuh.webp";
-    let url_error = false;
+    let url = $state(building ? "" : $page.url.origin + "/uuh.webp");
+    let url_error = $state(false);
 
-    let width = 64;
-    let auto_width = true;
-    let height = 64;
-    let auto_height = false;
+    let width = $state(64);
+    let auto_width = $state(true);
+    let height = $state(64);
+    let auto_height = $state(false);
 
-    let braille: Response | undefined;
+    let braille: Response | undefined = $state();
 
     async function handleSubmission(this: HTMLFormElement, event: SubmitEvent) {
         event.preventDefault();
@@ -39,13 +39,13 @@
 
 <Meta title="Braille Image" description="braille image experiment" />
 
-<form class="flex flex-col gap-2 mx-10" on:submit={handleSubmission}>
+<form class="flex flex-col gap-2 mx-10" onsubmit={handleSubmission}>
     <div class="flex flex-row items-center">
         <label class="text-nowrap" for="img_url">Image URL:</label>
         <!-- holy fuck is this ever big and it's not even because of tailwind -->
         <input
             class="w-full {url_error ? 'border border-red-500' : 'm-[1px]'}"
-            on:input={clearError}
+            oninput={clearError}
             bind:value={url}
             type="text"
             name="img_url"
@@ -85,7 +85,8 @@
         </select>
     </div>
     <button>
-        <input type="submit" value="Generate Braille" />
+        Generate Braille
+        <input type="submit" value=""/>
     </button>
 </form>
 

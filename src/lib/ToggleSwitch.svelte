@@ -1,6 +1,10 @@
 <script lang="ts">
-    export let onToggle: (enabled: boolean) => void;
-    export let value: boolean;
+    interface Props {
+        onToggle: (enabled: boolean) => void;
+        value: boolean;
+    }
+
+    let { onToggle, value }: Props = $props();
 
     function handleKey(e: KeyboardEvent) {
         if ([" ", "Escape", "Enter"].includes(e.key)) {
@@ -10,8 +14,8 @@
 </script>
 
 <div
-    on:click={() => onToggle(value)}
-    on:keydown={handleKey}
+    onclick={() => onToggle(value)}
+    onkeydown={handleKey}
     role="switch"
     tabindex="0"
     aria-checked={value}

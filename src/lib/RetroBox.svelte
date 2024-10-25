@@ -1,7 +1,11 @@
 <script lang="ts">
-    import { page } from "$app/stores";
-    export let title: string;
-    export let bottom_text: string | undefined = undefined;
+    interface Props {
+        title: string;
+        bottom_text?: string;
+        children?: import('svelte').Snippet;
+    }
+
+    let { title, bottom_text, children }: Props = $props();
 </script>
 
 <div
@@ -38,7 +42,7 @@
     <main
         class="p-8 mt-2 border-4 border-t-neutral-700 border-l-neutral-700 bg-neutral-100 m-1"
     >
-        <slot />
+        {@render children?.()}
     </main>
     {#if bottom_text}
         <footer class="px-2 text-end text-black">

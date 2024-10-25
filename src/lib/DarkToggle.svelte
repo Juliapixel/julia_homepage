@@ -2,7 +2,11 @@
     import { onMount } from "svelte";
     import ToggleSwitch from "./ToggleSwitch.svelte";
 
-    export let dark_enabled = false;
+    interface Props {
+        dark_enabled?: boolean;
+    }
+
+    let { dark_enabled = $bindable(false) }: Props = $props();
 
     onMount(() => {
         const doc = document.documentElement;

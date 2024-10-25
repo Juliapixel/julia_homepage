@@ -1,6 +1,6 @@
 <script lang="ts">
-    let zoazo: undefined | string;
-    let is_error = false;
+    let zoazo: undefined | string = $state();
+    let is_error = $state(false);
 
     async function getZoazo() {
         try {
@@ -14,7 +14,7 @@
     }
 </script>
 
-<button on:click={getZoazo}>Click to zoazo</button>
+<button onclick={getZoazo}>Click to zoazo</button>
 {#if zoazo}
     <h1 class:text-red-500={is_error}>{zoazo}</h1>
 {/if}

@@ -1,7 +1,6 @@
 <script lang="ts">
     import Meta from "$lib/Meta.svelte";
     import tooltip from "$lib/utils/tooltip";
-    // import "tippy.js/animations/perspective-subtle.css";
 
     async function handleClick(this: HTMLSpanElement) {
         navigator.clipboard.writeText(this.innerText);
@@ -24,8 +23,8 @@
         aria-label="Copy to Clipboard"
         role="button"
         tabindex="0"
-        on:keydown={handleKeyDown}
-        on:click={handleClick}>contact@juliapixel.com</span
+        onkeydown={handleKeyDown}
+        onclick={handleClick}>contact@juliapixel.com</span
     >
 </p>
 <p>

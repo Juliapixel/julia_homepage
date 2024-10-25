@@ -1,7 +1,11 @@
 <script lang="ts">
-    export let description: string;
-    export let title: string;
-    export let image: string | undefined = undefined;
+    interface Props {
+        description: string;
+        title: string;
+        image?: string | undefined;
+    }
+
+    let { description, title, image = undefined }: Props = $props();
 </script>
 
 <svelte:head>

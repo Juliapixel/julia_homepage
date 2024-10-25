@@ -51,7 +51,11 @@
     <a href="https://github.com/Juliapixel/palm_kb_rs">palm_kb_rs</a>
 </h1>
 <p>{$_("sim.pkb.0")}</p>
-<img class="w-[30rem]" src="https://cdn.juliapixel.com/julia/palm_kb.jpg" alt={$_("sim.pkb.alt")} />
+<img
+    class="w-[30rem]"
+    src="https://cdn.juliapixel.com/julia/palm_kb.jpg"
+    alt={$_("sim.pkb.alt")}
+/>
 <p>{$_("sim.pkb.1")}</p>
 
 <hr />
