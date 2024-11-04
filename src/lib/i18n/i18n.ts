@@ -22,5 +22,5 @@ if (from_query_string) {
 init({
     fallbackLocale: "en",
     initialLocale: locale,
-    handleMissingMessage: (i) => console.log(i),
+    handleMissingMessage: (i) => console.warn(i),
 });
