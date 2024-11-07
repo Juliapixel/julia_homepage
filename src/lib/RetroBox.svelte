@@ -1,11 +1,12 @@
 <script lang="ts">
     interface Props {
         title: string;
-        bottom_text?: string;
+        bottom_right_text?: string;
+        bottom_left_text?: string;
         children?: import("svelte").Snippet;
     }
 
-    let { title, bottom_text, children }: Props = $props();
+    let { title, bottom_left_text, bottom_right_text, children }: Props = $props();
 </script>
 
 <div
@@ -44,9 +45,23 @@
     >
         {@render children?.()}
     </main>
-    {#if bottom_text}
+
+    {#if bottom_left_text && bottom_right_text}
+        <footer class="px-2 text-black w-full">
+            <span>
+                {bottom_left_text}
+            </span>
+            <span class="float-right">
+                {bottom_right_text}
+            </span>
+        </footer>
+    {:else if bottom_right_text}
         <footer class="px-2 text-end text-black">
-            {bottom_text}
+            {bottom_right_text}
+        </footer>
+    {:else if bottom_left_text}
+        <footer class="px-2 text-start text-black">
+            {bottom_left_text}
         </footer>
     {/if}
 </div>
