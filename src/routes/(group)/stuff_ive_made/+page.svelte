@@ -59,6 +59,21 @@
 <p>{$_("sim.pkb.1")}</p>
 
 <hr />
+
+<h1>
+    <a href="https://github.com/Juliapixel/wutville_bg">
+        wutville_bg
+    </a>
+</h1>
+<p>{$_("sim.wbg.p1")}</p>
+<p>
+    <span>{$_("sim.wbg.p2")}</span>
+    <span><a href="https://github.com/Juliapixel/twitch_emote_api">{$_("sim.wbg.p2a")}</a></span>
+</p>
+<img src="https://cdn.juliapixel.com/julia/wutville.webp" alt={$_("sim.wbg.alt")}/>
+
+<hr />
+
 <h1>
     <a href="https://github.com/Juliapixel/julia_homepage"
         >{$_("sim.tw.title")}</a

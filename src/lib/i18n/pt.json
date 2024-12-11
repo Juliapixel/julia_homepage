@@ -61,6 +61,12 @@
       "0": "uma conversão USB de um Palm® Portable Keyboard usando uma placa de desenvolvimento STM32F411CEU6 com o framework async embassy-rs. funciona surpreendentemente bem, apesar da documentação que consegui encontrar online ser bem xôxa.",
       "1": "o plano era fazer um circuito impresso customizado, mas acontece que design eletrônico é bem difícil",
       "alt": "uma foto da minha mesa, nela está um teclado dobrável Palm, com fios conectados aos conectores e a uma breadboard, que contém uma placa de desenvolvimento STM32 e alguns outros componentes. tudo parece muito instável e propenso a quebrar a qualquer momento."
+    },
+    "wbg": {
+      "p1": "é um fundo de stream pra twitch feito com three.js, que mostra emotes da Twitch, 7TV, FFZ e BTTV seguindo um caminho predeterminado. o modelo ao fundo é wutville, um mapa de Team Fortress 2, que foi modificado à mão e reduzido ao máximo, pra melhorar a performance de renderização no browser. ",
+      "p2": "pegar os emotes de um canal da twitch e colocá-los dentro do three.js foi feito através de uma ",
+      "alt": "uma imagem animada de uma vila natalina, com um trilho vindo de um túnel à direita, descendo em direção ao espectador. um fluxo de imagens animadas aproximadamente quadradas, os emotes, podem ser vistos descendo pelos trilhos e saindo do campo de visão à direita da tela.",
+      "p2a": "biblioteca em TS e um servidor web em rust que eu fiz."
     }
   }
 }

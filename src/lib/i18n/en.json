@@ -61,6 +61,12 @@
       "0": "a Palm® Portable Keyboard USB conversion using an STM32F411CEU6 dev board with the embassy-rs async embedded framework. actually works surprisingly well despite the somewhat common mistakes in the documentation I was able to find online.",
       "1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard",
       "alt": "a picture of my desk, on it is a Palm folding keyboard, with wires connected to the connector leads on it and to a breadboard, which holds an STM32 dev board and a few other components. It looks very unstable and prone to break at any moment."
+    },
+    "wbg": {
+      "p1": "it's a twitch stream background using three.js, that shows emotes from Twitch, 7TV, FFZ and BTTV moving along a predetermined path, made in blender. the background model is from wutville, a Team Fortress 2 map, which was hand modified and stripped down to the bare minimum, to improve rendering performance on the browser.",
+      "p2": "getting twitch channel emotes and putting them into three.js was done using a",
+      "alt": "an animated image of a cartoonish christmas-y village, with a rail coming from a tunnel to the right, going down a slight incline towards the viewer. a stream of animated roughly square images, the emotes, can be seen going down the rails and disappearing off-screen",
+      "p2a": "TS library and auxiliarry rust web server i made myself."
     }
   }
 }
