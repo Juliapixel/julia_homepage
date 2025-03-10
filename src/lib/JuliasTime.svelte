@@ -13,13 +13,16 @@
         throw new Error("offset must be an integer");
     }
 
-    let time = $state(new Date());
+    let myTime = new Date();
+    myTime.setUTCMilliseconds(myTime.getUTCMilliseconds() + 3600 * 1000 * offset)
+
+    let time = $state(myTime);
 
     onMount(() => {
         const interval = setInterval(() => {
-            time = new Date();
+            time = new Date()
             time.setUTCMilliseconds(
-                new Date().getUTCMilliseconds() + 3600 * 1000 * offset,
+                time.getUTCMilliseconds() + 3600 * 1000 * offset,
             );
         }, 1000);
 
