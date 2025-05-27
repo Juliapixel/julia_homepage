@@ -44,7 +44,7 @@
         <label class="text-nowrap" for="img_url">Image URL:</label>
         <!-- holy fuck is this ever big and it's not even because of tailwind -->
         <input
-            class="w-full {url_error ? 'border border-red-500' : 'm-[1px]'}"
+            class="w-full {url_error ? 'border border-red-500' : 'm-px'}"
             oninput={clearError}
             bind:value={url}
             type="text"
@@ -92,7 +92,7 @@
 
 {#if braille}
     <div
-        class="font-sourceCodePro bg-black text-white overflow-auto mt-10 p-2 rounded [line-height:1em] {braille.ok
+        class="font-source-code-pro bg-black text-white overflow-auto mt-10 p-2 rounded [line-height:1em] {braille.ok
             ? ''
             : 'border-2 border-red-500'}"
     >

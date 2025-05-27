@@ -17,9 +17,7 @@
     }
 </script>
 
-<div
-    class="flex flex-col justify-center items-center text-center min-h-[100vh]"
->
+<div class="flex flex-col justify-center items-center text-center min-h-screen">
     <img src="/uuh.webp" alt="epic cat!!!1!" />
     <div bind:this={msg_box}></div>
     <p>Error {$page.status}</p>

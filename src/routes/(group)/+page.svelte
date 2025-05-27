@@ -3,11 +3,26 @@
     import Meta from "$lib/Meta.svelte";
     import tooltip from "$lib/utils/tooltip";
     import { _ } from "svelte-i18n";
+
+    let kaboom = $state(false);
 </script>
 
 <Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png" />
 
-<img src="/fire.gif" alt="epic cat!!!1!" />
+{#if kaboom}
+    <img
+        src="NUCLEARBOMB.gif"
+        alt="a nuclear bomb going off"
+        class="w-[321px] h-[105px]"
+        style="position: absolute; pointer-events: none;"
+    />
+{/if}
+<img
+    src="/fire.gif"
+    alt="epic cat!!!1!"
+    onmouseenter={() => (kaboom = true)}
+    onmouseleave={() => (kaboom = false)}
+/>
 <h1>{$_("home.yo")}</h1>
 <p>
     {$_("home.intro_main")}

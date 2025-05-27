@@ -14,13 +14,15 @@
     }
 
     let myTime = new Date();
-    myTime.setUTCMilliseconds(myTime.getUTCMilliseconds() + 3600 * 1000 * offset)
+    myTime.setUTCMilliseconds(
+        myTime.getUTCMilliseconds() + 3600 * 1000 * offset,
+    );
 
     let time = $state(myTime);
 
     onMount(() => {
         const interval = setInterval(() => {
-            time = new Date()
+            time = new Date();
             time.setUTCMilliseconds(
                 time.getUTCMilliseconds() + 3600 * 1000 * offset,
             );

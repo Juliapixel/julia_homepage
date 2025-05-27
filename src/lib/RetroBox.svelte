@@ -6,14 +6,15 @@
         children?: import("svelte").Snippet;
     }
 
-    let { title, bottom_left_text, bottom_right_text, children }: Props = $props();
+    let { title, bottom_left_text, bottom_right_text, children }: Props =
+        $props();
 </script>
 
 <div
     class="p-[2px] border-4 border-r-neutral-700 border-b-neutral-700 bg-neutral-400"
 >
     <div
-        class="flex flex-row justify-between items-center pl-2 m-1 h-8 from-blue-900 to-blue-700 bg-gradient-to-r"
+        class="flex flex-row justify-between items-center pl-2 m-1 h-8 from-blue-900 to-blue-700 bg-linear-to-r"
     >
         <span class="text-neutral-200">{title}</span>
         <div class="flex flex-row h-full p-1 gap-1">

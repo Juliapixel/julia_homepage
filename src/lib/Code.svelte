@@ -12,6 +12,6 @@
     <div
         class="p-5 overflow-auto [text-shadow:none] text-sm bg-neutral-800 text-white border-t-neutral-700 border-l-neutral-700 border-4"
     >
-        <pre class="font-sourceCodePro">{code}</pre>
+        <pre class="font-source-code-pro">{code}</pre>
     </div>
 </div>

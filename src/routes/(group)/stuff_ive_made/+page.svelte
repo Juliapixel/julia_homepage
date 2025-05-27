@@ -52,7 +52,7 @@
 </h1>
 <p>{$_("sim.pkb.0")}</p>
 <img
-    class="w-[30rem]"
+    class="w-120"
     src="https://cdn.juliapixel.com/julia/palm_kb.jpg"
     alt={$_("sim.pkb.alt")}
 />
@@ -61,16 +61,21 @@
 <hr />
 
 <h1>
-    <a href="https://github.com/Juliapixel/wutville_bg">
-        wutville_bg
-    </a>
+    <a href="https://github.com/Juliapixel/wutville_bg"> wutville_bg </a>
 </h1>
 <p>{$_("sim.wbg.p1")}</p>
 <p>
     <span>{$_("sim.wbg.p2")}</span>
-    <span><a href="https://github.com/Juliapixel/twitch_emote_api">{$_("sim.wbg.p2a")}</a></span>
+    <span
+        ><a href="https://github.com/Juliapixel/twitch_emote_api"
+            >{$_("sim.wbg.p2a")}</a
+        ></span
+    >
 </p>
-<img src="https://cdn.juliapixel.com/julia/wutville.webp" alt={$_("sim.wbg.alt")}/>
+<img
+    src="https://cdn.juliapixel.com/julia/wutville.webp"
+    alt={$_("sim.wbg.alt")}
+/>
 
 <hr />
 
