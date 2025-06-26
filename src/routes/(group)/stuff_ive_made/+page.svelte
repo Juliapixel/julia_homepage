@@ -80,9 +80,26 @@
 <hr />
 
 <h1>
+    <a href="https://cabbit.me">cabbit.me</a>
+</h1>
+<p>{$_("sim.cbme.p1")}</p>
+<p>{$_("sim.cbme.p2")}</p>
+<img class="max-w-full w-xl" alt="cabbit.me" src="/cabbit_me.png" />
+
+<hr />
+
+<h1>
     <a href="https://github.com/Juliapixel/julia_homepage"
         >{$_("sim.tw.title")}</a
     >
 </h1>
 <p>{$_("sim.tw.0")}</p>
 <p>{$_("sim.tw.1")}</p>
+
+<style lang="postcss">
+    @reference "tailwindcss";
+
+    p + p {
+        @apply mt-2;
+    }
+</style>

@@ -67,6 +67,10 @@
       "p2": "getting twitch channel emotes and putting them into three.js was done using a",
       "alt": "an animated image of a cartoonish christmas-y village, with a rail coming from a tunnel to the right, going down a slight incline towards the viewer. a stream of animated roughly square images, the emotes, can be seen going down the rails and disappearing off-screen",
       "p2a": "TS library and auxiliarry rust web server i made myself."
+    },
+    "cbme": {
+      "p1": "a temporary image uploader service, for use in instant messaging platforms that don't have a built-in image uploader.",
+      "p2": "i made it using Svelte and Rust (as i usually do). images are stored in a public R2 bucket on my cloudflare account, so the backend is only responsible for receiving uploaded images and serving extra information about them. "
     }
   }
 }

@@ -67,6 +67,10 @@
       "p2": "pegar os emotes de um canal da twitch e colocá-los dentro do three.js foi feito através de uma ",
       "alt": "uma imagem animada de uma vila natalina, com um trilho vindo de um túnel à direita, descendo em direção ao espectador. um fluxo de imagens animadas aproximadamente quadradas, os emotes, podem ser vistos descendo pelos trilhos e saindo do campo de visão à direita da tela.",
       "p2a": "biblioteca em TS e um servidor web em rust que eu fiz."
+    },
+    "cbme": {
+      "p1": "um serviço de upload temporário de imagens, pra uso em serviços de mensagem instantânea que não tem funcionalidade de upload de imagem embutida.",
+      "p2": "foi feito em Svelte e Rust (como costumo fazer). as imagens são armazenadas em um bucket R2 público da minha conta da cloudflare, então o backend é responsável só por receber o upload de imagens e servir informações extras sobre elas."
     }
   }
 }
