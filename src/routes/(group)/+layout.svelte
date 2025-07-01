@@ -70,7 +70,7 @@
         title="/usr/bin/homepage {fakeParams(
             $page.url,
         )}serve {`"${$page.url.pathname}"`}"
-        bottom_right_text="</> with <3 by Julia"
+        bottom_right_text={m["footer.love"]()}
         bottom_left_text={`${__GIT_REF__.slice(0, 8)} ${__GIT_BRANCH__}`}
     >
         {@render children?.()}

@@ -30,21 +30,21 @@
     <span use:tooltip={{ content: "help" }}>{m["home.brazil"]()}</span>
 </p>
 <p>
-    {m["home.about_1.0"]()} <a href="https://tweaked.cc">ComputerCraft</a>
-    {m["home.about_1.1"]()}
+    {m["home.about_1._0"]()} <a href="https://tweaked.cc">ComputerCraft</a>
+    {m["home.about_1._1"]()}
 </p>
-<p>{m["home.about_2.0"]()}</p>
-<p>{m["home.likes.0"]()}:</p>
+<p>{m["home.about_2._0"]()}</p>
+<p>{m["home.likes._0"]()}:</p>
 <ul>
-    <li>{m["home.likes.1"]()}</li>
+    <li>{m["home.likes._1"]()}</li>
     <li>Rust</li>
     <li>videogames</li>
-    <li>{m["home.likes.2"]()}</li>
+    <li>{m["home.likes._2"]()}</li>
     <li>Svelte</li>
 </ul>
 <p>
-    {m["home.contact.0"]()}
-    <a href={localizeHref("/contact")}>{m["home.contact.1"]()}</a>
+    {m["home.contact._0"]()}
+    <a href={localizeHref("/contact")}>{m["home.contact._1"]()}</a>
 </p>
 <div class="mt-8">
     {m["home.my_current_time_is"]()}: <JuliasTime offset={-3} />

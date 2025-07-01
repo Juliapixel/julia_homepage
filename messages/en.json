@@ -5,11 +5,11 @@
     "intro_main": "i'm Julia (she/her), a 21yo \"software developer\" from",
     "brazil": "brazil",
     "about_1": {
-      "0": "i've been coding since i was like 14 years old, making Lua scripts for",
-      "1": "turtles on minecraft"
+      "_0": "i've been coding since i was like 14 years old, making Lua scripts for",
+      "_1": "turtles on minecraft"
     },
     "about_2": {
-      "0": "noawadays i mostly write Rust, either making my own things or contributing to open-source projects"
+      "_0": "nowadays i mostly write Rust, either making my own things or contributing to open-source projects"
     },
     "reach_on_discord": "u can reach me on discord @Juliapixel if u want to",
     "check_out_my": "also check out my",
@@ -19,13 +19,13 @@
     "my_current_time_is": "my current time is",
     "adding_more_stuff": "also i'm adding more stuff on here eventually ok",
     "likes": {
-      "0": "i also happen to like",
-      "1": "3D printing",
-      "2": "CAD modeling"
+      "_0": "i also happen to like",
+      "_1": "3D printing",
+      "_2": "CAD modeling"
     },
     "contact": {
-      "0": "if you like any of that stuff and wanna talk about it you can reach me",
-      "1": "here"
+      "_0": "if you like any of that stuff and wanna talk about it you can reach me",
+      "_1": "here"
     }
   },
   "header": {
@@ -38,36 +38,36 @@
   },
   "sim": {
     "mit": {
-      "0": "a rust crate that can be both installed as a binary and used as a library, can turn images into ascii art, kinda like",
-      "1": "you can see a small example of what it can do",
-      "2": "here"
+      "_0": "a rust crate that can be both installed as a binary and used as a library, can turn images into ascii art, kinda like",
+      "_1": "you can see a small example of what it can do",
+      "_2": "here"
     },
     "tpr": {
-      "0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
-      "1": "it supports a bunch of features of the protocol, including",
-      "2": "gotta find a picture of what that looks like cuz it's pretty cool ngl",
+      "_0": "a userspace driver and CLI tool for thermal printers the use the ESC-POS protocol, unfortunately only works on windows afaik",
+      "_1": "it supports a bunch of features of the protocol, including",
+      "_2": "gotta find a picture of what that looks like cuz it's pretty cool ngl",
       "list": {
-        "0": "image printing, with dithering (to make it look pretty woah)",
-        "1": "QR codes",
-        "2": "font styles and weight"
+        "_0": "image printing, with dithering (to make it look pretty woah)",
+        "_1": "QR codes",
+        "_2": "font styles and weight"
       },
       "alt": "a picture of a cheap chinese thermal printer with a bit of paper sticking out, on it is a grayscale picture of the Pokémon called Bidoof"
     },
     "tw": {
-      "0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
-      "1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance, being served statically with Caddy",
+      "_0": "made it with Svelte, might add like a blog or something using rust for the backend for that",
+      "_1": "along with a couple other things of mine, it's running on an oracle cloud free tier x64 instance, being served statically with Caddy",
       "title": "this website"
     },
     "pkb": {
-      "0": "a Palm® Portable Keyboard USB conversion using an STM32F411CEU6 dev board with the embassy-rs async embedded framework. actually works surprisingly well despite the somewhat common mistakes in the documentation I was able to find online.",
-      "1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard",
+      "_0": "a Palm® Portable Keyboard USB conversion using an STM32F411CEU6 dev board with the embassy-rs async embedded framework. actually works surprisingly well despite the somewhat common mistakes in the documentation I was able to find online.",
+      "_1": "the plan was to eventually turn this into a custom PCB but turns out PCB design is very hard",
       "alt": "a picture of my desk, on it is a Palm folding keyboard, with wires connected to the connector leads on it and to a breadboard, which holds an STM32 dev board and a few other components. It looks very unstable and prone to break at any moment."
     },
     "wbg": {
       "p1": "it's a twitch stream background using three.js, that shows emotes from Twitch, 7TV, FFZ and BTTV moving along a predetermined path, made in blender. the background model is from wutville, a Team Fortress 2 map, which was hand modified and stripped down to the bare minimum, to improve rendering performance on the browser.",
       "p2": "getting twitch channel emotes and putting them into three.js was done using a",
       "alt": "an animated image of a cartoonish christmas-y village, with a rail coming from a tunnel to the right, going down a slight incline towards the viewer. a stream of animated roughly square images, the emotes, can be seen going down the rails and disappearing off-screen",
-      "p2a": "TS library and auxiliarry rust web server i made myself."
+      "p2a": "TS library and auxiliary rust web server i made myself."
     },
     "cbme": {
       "p1": "a temporary image uploader service, for use in instant messaging platforms that don't have a built-in image uploader.",

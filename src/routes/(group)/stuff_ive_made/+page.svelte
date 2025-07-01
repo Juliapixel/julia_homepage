@@ -26,12 +26,12 @@
 <h1>
     <a href="https://github.com/Juliapixel/make_it_braille">make_it_braille</a>
 </h1>
-<p>{m["sim.mit.0"]()}:</p>
+<p>{m["sim.mit._0"]()}:</p>
 
 <Code {code} />
 <p>
-    {m["sim.mit.1"]()}
-    <a href={localizeHref("/experiments/braille")}>{m["sim.mit.2"]()}</a>
+    {m["sim.mit._1"]()}
+    <a href={localizeHref("/experiments/braille")}>{m["sim.mit._2"]()}</a>
 </p>
 
 <hr />
@@ -40,12 +40,12 @@
         >thermal_printer_rs</a
     >
 </h1>
-<p>{m["sim.tpr.0"]()}</p>
-<p>{m["sim.tpr.1"]()}:</p>
+<p>{m["sim.tpr._0"]()}</p>
+<p>{m["sim.tpr._1"]()}:</p>
 <ul>
-    <li>{m["sim.tpr.list.0"]()}</li>
-    <li>{m["sim.tpr.list.1"]()}</li>
-    <li>{m["sim.tpr.list.2"]()}</li>
+    <li>{m["sim.tpr.list._0"]()}</li>
+    <li>{m["sim.tpr.list._1"]()}</li>
+    <li>{m["sim.tpr.list._2"]()}</li>
 </ul>
 <img class="w-80" src="/thermal_printer.webp" alt={m["sim.tpr.alt"]()} />
 
@@ -54,13 +54,13 @@
 <h1>
     <a href="https://github.com/Juliapixel/palm_kb_rs">palm_kb_rs</a>
 </h1>
-<p>{m["sim.pkb.0"]()}</p>
+<p>{m["sim.pkb._0"]()}</p>
 <img
     class="w-120"
     src="https://cdn.juliapixel.com/julia/palm_kb.jpg"
     alt={m["sim.pkb.alt"]()}
 />
-<p>{m["sim.pkb.1"]()}</p>
+<p>{m["sim.pkb._1"]()}</p>
 
 <hr />
 
@@ -97,8 +97,8 @@
         >{m["sim.tw.title"]()}</a
     >
 </h1>
-<p>{m["sim.tw.0"]()}</p>
-<p>{m["sim.tw.1"]()}</p>
+<p>{m["sim.tw._0"]()}</p>
+<p>{m["sim.tw._1"]()}</p>
 
 <style lang="postcss">
     @reference "tailwindcss";

@@ -12,20 +12,20 @@
     "my_current_time_is": "meu horário atual é",
     "adding_more_stuff": "eu vou colocar mais coisas aqui no futuro ok",
     "about_1": {
-      "0": "eu programo desde quando eu tinha, sla, 14 anos, programando turtles de ",
-      "1": "no minecraft"
+      "_0": "eu comecei a programar aos 14 anos, usando Lua pra controlar turtles do ",
+      "_1": "no minecraft"
     },
     "about_2": {
-      "0": "atualmente eu programo principalmente em Rust, seja contribuindo pra projetos open-source ou fazendo minhas próprias coisas"
+      "_0": "atualmente eu programo principalmente em Rust, seja contribuindo pra projetos open-source ou fazendo minhas próprias coisas"
     },
     "likes": {
-      "0": "eu também gosto de",
-      "1": "impressão 3D",
-      "2": "modelagem CAD"
+      "_0": "eu também gosto de",
+      "_1": "impressão 3D",
+      "_2": "modelagem CAD"
     },
     "contact": {
-      "0": "se vc gosta de alguma dessas coisas e quer conversar sobre, vc pode me encontrar",
-      "1": "aqui"
+      "_0": "se vc gosta de alguma dessas coisas e quer conversar sobre, vc pode me encontrar",
+      "_1": "aqui"
     }
   },
   "header": {
@@ -38,29 +38,29 @@
   },
   "sim": {
     "mit": {
-      "0": "uma crate rust, que pode ser tanto um binário executável quanto uma lib, que transforma imagens em arte ascii, tipo",
-      "1": "você pode ver um exemplo do que ela consegue fazer",
-      "2": "aqui"
+      "_0": "uma crate rust, que pode ser tanto um binário executável quanto uma lib, que transforma imagens em arte ascii, tipo",
+      "_1": "você pode ver um exemplo do que ela consegue fazer",
+      "_2": "aqui"
     },
     "tpr": {
-      "0": "um driver userspace e ferramenta de linha de comando pra impressoras térmicas que usam o protocolo ESC-POS, infelizmente ela só funciona no windows.",
-      "1": "ela suporta várias funções do protocolo, como",
-      "2": "preciso achar uma foto de como fica, pq é bem legal...",
+      "_0": "um driver userspace e ferramenta de linha de comando pra impressoras térmicas que usam o protocolo ESC-POS, infelizmente ela só funciona no windows.",
+      "_1": "ela suporta várias funções do protocolo, como",
+      "_2": "preciso achar uma foto de como fica, pq é bem legal...",
       "list": {
-        "0": "impressão de imagem, com dithering (pra ficar bonitinho)",
-        "1": "QR codes",
-        "2": "estilos de fonte"
+        "_0": "impressão de imagem, com dithering (pra ficar bonitinho)",
+        "_1": "QR codes",
+        "_2": "estilos de fonte"
       },
       "alt": "uma foto de uma impressora chinesa barata com um pouco de papel saindo dela, nesse pedaço há uma foto do Pokémon Bidoof"
     },
     "tw": {
-      "0": "feito com Svelte, talvez algum dia eu coloque um blog ou alguma coisa com um backend em rust",
-      "1": "ele está rodando, junto com algumas outras coisas minhas, em uma instância grátis x64 da oracle cloud",
+      "_0": "feito com Svelte, talvez algum dia eu coloque um blog ou alguma coisa com um backend em rust",
+      "_1": "ele está rodando, junto com algumas outras coisas minhas, em uma instância grátis x64 da oracle cloud",
       "title": "esse site"
     },
     "pkb": {
-      "0": "uma conversão USB de um Palm® Portable Keyboard usando uma placa de desenvolvimento STM32F411CEU6 com o framework async embassy-rs. funciona surpreendentemente bem, apesar da documentação que consegui encontrar online ser bem xôxa.",
-      "1": "o plano era fazer um circuito impresso customizado, mas acontece que design eletrônico é bem difícil",
+      "_0": "uma conversão USB de um Palm® Portable Keyboard usando uma placa de desenvolvimento STM32F411CEU6 com o framework async embassy-rs. funciona surpreendentemente bem, apesar da documentação que consegui encontrar online ser bem xôxa.",
+      "_1": "o plano era fazer um circuito impresso customizado, mas acontece que design eletrônico é bem difícil",
       "alt": "uma foto da minha mesa, nela está um teclado dobrável Palm, com fios conectados aos conectores e a uma breadboard, que contém uma placa de desenvolvimento STM32 e alguns outros componentes. tudo parece muito instável e propenso a quebrar a qualquer momento."
     },
     "wbg": {
