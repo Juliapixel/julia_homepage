@@ -28,9 +28,6 @@
                 localStorageKey,
             ) as Locale | null;
             const fromURL = extractLocaleFromUrl($page.url);
-            console.log("local", local);
-            console.log("navigator", extractLocaleFromNavigator());
-            console.log("url", fromURL);
             if (local === null && fromURL == baseLocale) {
                 return extractLocaleFromNavigator() ?? baseLocale;
             }
