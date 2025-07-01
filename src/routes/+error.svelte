@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     import DarkToggle from "$lib/DarkToggle.svelte";
     import ErrorText from "$lib/ErrorText.svelte";
+    import { localizeHref } from "$lib/paraglide/runtime";
     import { onMount, mount } from "svelte";
 
     let msg_box: Element;
@@ -23,7 +24,7 @@
     <p>Error {$page.status}</p>
     <div>
         <button class="mt-24" onclick={handleClick}>go back</button>
-        <a href="/" class="">
+        <a href={localizeHref("/")} class="">
             <button class="mt-24">go home</button>
         </a>
     </div>
