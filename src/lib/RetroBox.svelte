@@ -22,21 +22,21 @@
                 <img
                     src="/minimize.png"
                     alt="minimize icon"
-                    class="h-full aspect-square [image-rendering:crisp-edges]"
+                    class="h-full aspect-square [image-rendering:pixelated]"
                 />
             </button>
             <button class="p-0 max-w-fit" disabled aria-hidden="true">
                 <img
                     src="/maximize.png"
                     alt="maximize icon"
-                    class="h-full aspect-square [image-rendering:crisp-edges]"
+                    class="h-full aspect-square [image-rendering:pixelated]"
                 />
             </button>
             <button class="p-0 max-w-fit" disabled aria-hidden="true">
                 <img
                     src="/close.png"
                     alt="close icon"
-                    class="h-full aspect-square [image-rendering:crisp-edges]"
+                    class="h-full aspect-square [image-rendering:pixelated]"
                 />
             </button>
         </div>
