@@ -2,9 +2,10 @@
     import { browser } from "$app/environment";
     import { page } from "$app/stores";
     import Header from "$lib/Header.svelte";
+    import { m } from "$lib/paraglide/messages";
+    import { getLocale, localizeHref, setLocale } from "$lib/paraglide/runtime";
     import RetroBox from "$lib/RetroBox.svelte";
     import VerticalSeparator from "$lib/VerticalSeparator.svelte";
-    import { _ } from "svelte-i18n";
     interface Props {
         children?: import("svelte").Snippet;
     }
@@ -26,23 +27,42 @@
 
 <Header>
     {#snippet left()}
-        <a href="/" class="no-underline">
+        <a href={localizeHref("/")} class="no-underline">
             <h1>{">_<"}</h1>
         </a>
         <VerticalSeparator height_class="h-8" />
-        <a href="/faq">
-            <button tabindex="-1">faq</button>
+        <a href={localizeHref("/faq")}>
+            <button class="cursor-pointer" tabindex="-1">faq</button>
         </a>
-        <a href="/contact">
-            <button tabindex="-1">{$_("header.contact")}</button>
+        <a href={localizeHref("/contact")}>
+            <button class="cursor-pointer" tabindex="-1"
+                >{m["header.contact"]()}</button
+            >
         </a>
-        <a href="/stuff_ive_made">
-            <button tabindex="-1">{$_("header.stuff_ive_made")}</button>
+        <a href={localizeHref("/stuff_ive_made")}>
+            <button class="cursor-pointer" tabindex="-1"
+                >{m["header.stuff_ive_made"]()}</button
+            >
         </a>
     {/snippet}
     {#snippet right()}
-        <!-- no dark theme for now ig -->
-        <!-- <DarkToggle dark_enabled={data.is_dark} /> -->
+        {#if getLocale() == "en"}
+            <button
+                class="cursor-pointer py-3"
+                aria-label="Português"
+                onclick={() => setLocale("pt")}
+            >
+                <img alt="Português" src="/brazil.png" />
+            </button>
+        {:else}
+            <button
+                class="cursor-pointer py-3"
+                aria-label="English"
+                onclick={() => setLocale("en")}
+            >
+                <img alt="English" src="/united_states.png" />
+            </button>
+        {/if}
     {/snippet}
 </Header>
 <div class="lg:mx-[20%] mt-12 mb-32">

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://inlang.com/schema/inlang-message-format",
   "home": {
     "yo": "eai",
     "intro_main": "meu nome é Júlia (ela/dela), \"desenvolvedora\" de \"software\"",
