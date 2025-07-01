@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
     import "../app.css";
-    import { locales, localizeHref } from "../paraglide/runtime";
+    import { locales, localizeHref } from "$lib/paraglide/runtime";
     import { page } from "$app/stores";
     import { building } from "$app/environment";
     import {
