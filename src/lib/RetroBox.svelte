@@ -14,7 +14,7 @@
     class="p-[2px] border-4 border-r-neutral-700 border-b-neutral-700 bg-neutral-400"
 >
     <div
-        class="flex flex-row justify-between items-center pl-2 m-1 h-8 from-blue-900 to-blue-700 bg-linear-to-r"
+        class="flex flex-row justify-between items-center pl-2 m-1 from-blue-900 to-blue-700 bg-linear-to-r"
     >
         <span class="text-neutral-200">{title}</span>
         <div class="flex flex-row h-full p-1 gap-1">
