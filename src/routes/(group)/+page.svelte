@@ -42,7 +42,10 @@
     <li>{m["home.likes.2"]()}</li>
     <li>Svelte</li>
 </ul>
-<p>{m["home.contact.0"]()} <a href={localizeHref("/contact")}>{m["home.contact.1"]()}</a></p>
+<p>
+    {m["home.contact.0"]()}
+    <a href={localizeHref("/contact")}>{m["home.contact.1"]()}</a>
+</p>
 <div class="mt-8">
     {m["home.my_current_time_is"]()}: <JuliasTime offset={-3} />
 </div>

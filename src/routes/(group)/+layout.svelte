@@ -35,19 +35,31 @@
             <button class="cursor-pointer" tabindex="-1">faq</button>
         </a>
         <a href={localizeHref("/contact")}>
-            <button class="cursor-pointer" tabindex="-1">{m["header.contact"]()}</button>
+            <button class="cursor-pointer" tabindex="-1"
+                >{m["header.contact"]()}</button
+            >
         </a>
         <a href={localizeHref("/stuff_ive_made")}>
-            <button class="cursor-pointer" tabindex="-1">{m["header.stuff_ive_made"]()}</button>
+            <button class="cursor-pointer" tabindex="-1"
+                >{m["header.stuff_ive_made"]()}</button
+            >
         </a>
     {/snippet}
     {#snippet right()}
         {#if getLocale() == "en"}
-            <button class="cursor-pointer py-3" aria-label="Português" onclick={() => setLocale("pt")}>
+            <button
+                class="cursor-pointer py-3"
+                aria-label="Português"
+                onclick={() => setLocale("pt")}
+            >
                 <img alt="Português" src="/brazil.png" />
             </button>
         {:else}
-            <button class="cursor-pointer py-3" aria-label="English" onclick={() => setLocale("en")}>
+            <button
+                class="cursor-pointer py-3"
+                aria-label="English"
+                onclick={() => setLocale("en")}
+            >
                 <img alt="English" src="/united_states.png" />
             </button>
         {/if}

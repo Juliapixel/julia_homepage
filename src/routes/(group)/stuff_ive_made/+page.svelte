@@ -29,7 +29,10 @@
 <p>{m["sim.mit.0"]()}:</p>
 
 <Code {code} />
-<p>{m["sim.mit.1"]()} <a href={localizeHref("/experiments/braille")}>{m["sim.mit.2"]()}</a></p>
+<p>
+    {m["sim.mit.1"]()}
+    <a href={localizeHref("/experiments/braille")}>{m["sim.mit.2"]()}</a>
+</p>
 
 <hr />
 <h1>
