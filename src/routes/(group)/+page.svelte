@@ -12,7 +12,7 @@
 
 {#if kaboom}
     <img
-        src="NUCLEARBOMB.gif"
+        src="/NUCLEARBOMB.gif"
         alt="a nuclear bomb going off"
         class="w-[321px] h-[105px]"
         style="position: absolute; pointer-events: none;"

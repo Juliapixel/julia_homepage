@@ -11,12 +11,11 @@ export default defineConfig({
         paraglideVitePlugin({
             project: "./project.inlang",
             outdir: "./src/lib/paraglide",
-            strategy: ["localStorage", "url", "baseLocale"],
+            strategy: ["custom-Wah", "url", "localStorage"],
             urlPatterns: [
                 {
                     pattern: ":path(.*)?",
                     localized: [
-                        ["en", "/en/:path(.*)?"],
                         ["pt", "/pt/:path(.*)?"],
                         ["en", "/:path(.*)?"],
                     ],
