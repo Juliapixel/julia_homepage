@@ -4,25 +4,18 @@
     import tooltip from "$lib/utils/tooltip";
     import { m } from "$lib/paraglide/messages";
     import { localizeHref } from "$lib/paraglide/runtime";
-
-    let kaboom = $state(false);
 </script>
 
 <Meta title="Julia's stuff!" description="it's her stuff!" image="/uuh.png" />
 
-{#if kaboom}
-    <img
-        src="/NUCLEARBOMB.gif"
-        alt="a nuclear bomb going off"
-        class="w-[321px] h-[105px]"
-        style="position: absolute; pointer-events: none;"
-    />
-{/if}
+<img
+    src="/NUCLEARBOMB.gif"
+    alt="a nuclear bomb going off"
+    class="absolute opacity-0 hover:opacity-100 w-[321px] h-[105px]"
+/>
 <img
     src="/fire.gif"
     alt="epic cat!!!1!"
-    onmouseenter={() => (kaboom = true)}
-    onmouseleave={() => (kaboom = false)}
 />
 <h1>{m["home.yo"]()}</h1>
 <p>
