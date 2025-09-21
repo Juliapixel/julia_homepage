@@ -80,8 +80,13 @@
 {/snippet}
 
 {#if showNav}
+    <div
+        class="fixed top-0 left-0 w-screen z-10 h-screen"
+        role="none"
+        onclick={() => (showNav = false)}
+    ></div>
     <nav
-        class="fixed md:hidden z-10 flex flex-row w-fit bg-neutral-400 border-4 border-b-neutral-700 border-r-neutral-700"
+        class="absolute md:hidden z-10 flex flex-row w-fit bg-neutral-400 border-4 border-b-neutral-700 border-r-neutral-700"
     >
         <div
             class="[writing-mode:vertical-rl] pt-4 pb-2 pl-1 pr-1 text-white bg-[#010080]"
