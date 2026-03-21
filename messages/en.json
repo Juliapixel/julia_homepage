@@ -2,7 +2,7 @@
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "home": {
     "yo": "yo",
-    "intro_main": "i'm Julia (she/her), a 21yo \"software developer\" from",
+    "intro_main": "i'm Julia (she/her), a 22yo \"software developer\" from",
     "brazil": "brazil",
     "about_1": {
       "_0": "i've been coding since i was like 14 years old, making Lua scripts for",
