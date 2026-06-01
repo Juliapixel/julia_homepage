@@ -13,10 +13,7 @@
     alt="a nuclear bomb going off"
     class="absolute opacity-0 hover:opacity-100 w-[321px] h-[105px]"
 />
-<img
-    src="/fire.gif"
-    alt="epic cat!!!1!"
-/>
+<img src="/fire.gif" alt="epic cat!!!1!" />
 <h1>{m["home.yo"]()}</h1>
 <p>
     {m["home.intro_main"]()}
