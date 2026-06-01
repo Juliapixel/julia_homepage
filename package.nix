@@ -37,12 +37,20 @@ pkgs.stdenv.mkDerivation (finalAttrs: {
   };
 
   pnpmDeps = fetchPnpmDeps (
-    let root = finalAttrs.src; in
+    let
+      root = finalAttrs.src;
+    in
     {
       inherit (finalAttrs) pname version;
       src = lib.fileset.toSource {
         inherit root;
-        fileset = lib.fileset.fileFilter ({name, ...}: builtins.elem name ["package.json" "pnpm-lock.yaml"]) root;
+        fileset = lib.fileset.fileFilter (
+          { name, ... }:
+          builtins.elem name [
+            "package.json"
+            "pnpm-lock.yaml"
+          ]
+        ) root;
       };
       fetcherVersion = 3;
       pnpm = pnpm_10;
