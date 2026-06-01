@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - uses: wimpysworld/nothing-but-nix@main
         with:
@@ -34,7 +34,7 @@ jobs:
 
       - run: nix build -L
       - name: save build output
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: build_output
           path: result
@@ -43,7 +43,7 @@ jobs:
     needs: build
     steps:
       - name: download build
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: build_output
           path: build
